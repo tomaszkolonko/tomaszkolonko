@@ -1,8 +1,11 @@
+// @ts-check
 import { defineConfig } from 'astro/config';
-import tailwind from '@astrojs/tailwind';
+import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
-  site: 'https://dein-username.github.io',
-  base: '/coaching-website', //Sobald du deine eigene Domain (z. B. www.dein-name.ch) verknüpfst, lässt du base einfach weg
-  integrations: [tailwind()],
+  site: 'https://tomaszkolonko.github.io',
+  base: '/tomaszkolonko',
+  vite: {
+    plugins: [tailwindcss()],
+  },
 });
