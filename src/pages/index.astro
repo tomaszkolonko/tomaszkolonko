@@ -1,16 +1,344 @@
 ---
+import Layout from '../layouts/Layout.astro';
+
+const challenges = [
+  {
+    tag: "Rollenwechsel & Führung",
+    title: "Souverän in der neuen Führungsrolle",
+    description: "Vom Fachexperten zur Führungskraft oder mitten im Spannungsfeld einer Sandwich-Position: Entwickle deinen eigenen, authentischen Führungsstil ohne Mikromanagement."
+  },
+  {
+    tag: "Transformation & Projekte",
+    title: "Orientierung in komplexen Vorhaben",
+    description: "Wenn zentrale Leitplanken fehlen, Stakeholder in verschiedene Richtungen ziehen und die Komplexität steigt: Fokus bewahren, Prioritäten schärfen und handlungsfähig bleiben."
+  },
+  {
+    tag: "System & Teamdynamik",
+    title: "Reibungsverluste & Konflikte lösen",
+    description: "Unterschwellige Spannungen im Team oder Silodenken erkennen, offen ansprechen und in produktive Zusammenarbeit sowie psychologische Sicherheit verwandeln."
+  },
+  {
+    tag: "Persönliche Standortbestimmung",
+    title: "Klarheit bei wichtigen Entscheidungen",
+    description: "Berufliche Neuorientierung, gesunde Abgrenzung bei hoher Belastung oder der nächste Karriereschritt: Mit strukturierter Reflexion zu stimmigen Entscheidungen."
+  }
+];
+
+const steps = [
+  {
+    step: "01",
+    title: "Unverbindliches Kennenlernen (25 Min.)",
+    description: "In einem kostenlosen Videocall oder Telefonat lernen wir uns kennen. Wir besprechen dein aktuelles Anliegen, klären offene Fragen und prüfen, ob die Chemie zwischen uns stimmt."
+  },
+  {
+    step: "02",
+    title: "Auftragsklärung & Zielbild",
+    description: "Zu Beginn der Zusammenarbeit definieren wir ein klares Ziel: Woran merkst du im Alltag konkret, dass sich das Coaching für dich gelohnt hat? Kein endloses Kreisen, sondern Fokus."
+  },
+  {
+    step: "03",
+    title: "Coaching-Sessions & Transfer",
+    description: "In vertraulichen Sessions (online oder vor Ort in Zürich) arbeiten wir systemisch und lösungsorientiert an deinen Fällen – mit direktem Transfer in deinen Führungs- und Berufsalltag."
+  }
+];
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Business Coaching & Sparring | Klarheit in Führung & Wandel">
+  <!-- Sticky Navigation -->
+  <header class="sticky top-0 z-50 bg-stone-50/90 backdrop-blur-md border-b border-stone-200/80">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#" class="font-serif text-xl font-medium tracking-tight text-slate-900">
+        Thomas Kolonko <span class="text-stone-400 font-sans text-sm font-normal ml-1 hidden sm:inline">| Business Coaching</span>
+      </a>
+      
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+        <a href="#anliegen" class="hover:text-emerald-800 transition-colors">Anliegen</a>
+        <a href="#angebot" class="hover:text-emerald-800 transition-colors">Angebot</a>
+        <a href="#ueber-mich" class="hover:text-emerald-800 transition-colors">Über mich</a>
+        <a href="#ablauf" class="hover:text-emerald-800 transition-colors">Ablauf</a>
+      </nav>
+
+      <a 
+        href="#kontakt" 
+        class="inline-flex items-center justify-center px-5 py-2.5 text-sm font-medium text-white bg-emerald-800 hover:bg-emerald-900 rounded-lg transition-colors shadow-xs"
+      >
+        Erstgespräch buchen
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="py-20 md:py-28 px-6">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-12 gap-12 items-center">
+        <div class="md:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-900/5 border border-emerald-900/10 text-emerald-900 text-xs font-medium tracking-wide uppercase">
+            Business Coaching & Sparring · Zürich & Online
+          </div>
+          
+          <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl text-slate-900 leading-[1.15] tracking-tight">
+            Klarheit gewinnen, wenn Führung und Projekte komplex werden.
+          </h1>
+          
+          <p class="text-lg sm:text-xl text-slate-600 leading-relaxed max-w-2xl">
+            Systemisches Coaching und Begleitung auf Augenhöhe für Führungskräfte, Projektleiter und Teams in Veränderungsprozessen. Strukturiert reflektieren, Muster erkennen und wirksam handeln.
+          </p>
+
+          <div class="pt-4 flex flex-col sm:flex-row gap-4">
+            <a 
+              href="#kontakt" 
+              class="inline-flex items-center justify-center px-7 py-4 text-base font-medium text-white bg-emerald-800 hover:bg-emerald-900 rounded-lg transition-all shadow-sm"
+            >
+              Kostenloses Kennenlernen vereinbaren
+            </a>
+            <a 
+              href="#anliegen" 
+              class="inline-flex items-center justify-center px-7 py-4 text-base font-medium text-slate-700 bg-white hover:bg-stone-100 border border-stone-200 rounded-lg transition-all"
+            >
+              Typische Themen entdecken
+            </a>
+          </div>
+
+          <div class="pt-6 border-t border-stone-200/80 flex flex-wrap gap-x-8 gap-y-2 text-xs text-slate-500 font-medium">
+            <span>✓ Betrieblicher Mentor mit eidg. Fachausweis</span>
+            <span>✓ Systemisch & lösungsorientiert</span>
+            <span>✓ Mehrjährige Führungserfahrung in IT & Transformation</span>
+          </div>
+        </div>
+
+        <!-- Portrait Placeholder -->
+        <div class="md:col-span-5">
+          <div class="relative aspect-4/5 rounded-2xl bg-stone-200 border border-stone-300/80 overflow-hidden shadow-lg flex flex-col items-center justify-center p-8 text-center">
+            <div class="w-20 h-20 rounded-full bg-stone-300 mb-4 flex items-center justify-center text-stone-500">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+              </svg>
+            </div>
+            <p class="font-serif text-lg text-slate-700 font-medium">Platzhalter für dein Porträtfoto</p>
+            <p class="text-xs text-slate-500 mt-2 max-w-xs">
+              Später einfach in <code>src/assets/portrait.jpg</code> ablegen und hier einbinden.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Challenges Section -->
+    <section id="anliegen" class="py-24 bg-white px-6 border-y border-stone-200/70">
+      <div class="max-w-6xl mx-auto">
+        <div class="max-w-2xl mb-16">
+          <p class="text-xs font-semibold uppercase tracking-widest text-emerald-800 mb-3">Typische Ausgangslagen</p>
+          <h2 class="font-serif text-3xl sm:text-4xl text-slate-900 tracking-tight mb-4">
+            Wann ein Sparring auf Augenhöhe den Unterschied macht
+          </h2>
+          <p class="text-slate-600 leading-relaxed">
+            Im operativen Tagesgeschäft bleibt oft wenig Raum, um komplexe Situationen mit Abstand zu betrachten. Genau hier setzt professionelles Business Coaching an.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          {challenges.map((item) => (
+            <div class="p-8 rounded-2xl bg-stone-50 border border-stone-200/80 hover:border-emerald-800/30 transition-colors">
+              <span class="inline-block text-xs font-semibold text-emerald-800 tracking-wide uppercase mb-2">
+                {item.tag}
+              </span>
+              <h3 class="font-serif text-2xl text-slate-900 mb-3">{item.title}</h3>
+              <p class="text-slate-600 leading-relaxed text-sm sm:text-base">{item.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="angebot" class="py-24 px-6">
+      <div class="max-w-6xl mx-auto">
+        <div class="max-w-2xl mb-16">
+          <p class="text-xs font-semibold uppercase tracking-widest text-emerald-800 mb-3">Zusammenarbeit</p>
+          <h2 class="font-serif text-3xl sm:text-4xl text-slate-900 tracking-tight mb-4">
+            Fokussiertes Angebot für nachhaltige Wirkung
+          </h2>
+          <p class="text-slate-600 leading-relaxed">
+            Keine vorgefertigten Standard-Schablonen, sondern massgeschneiderte Begleitung – abgestimmt auf deine Rolle, dein System und dein Ziel.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- 1:1 Coaching -->
+          <div class="bg-white p-10 rounded-2xl border border-stone-200/90 shadow-xs flex flex-col justify-between">
+            <div>
+              <div class="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-2">Für Einzelpersonen & Führungskräfte</div>
+              <h3 class="font-serif text-2xl text-slate-900 mb-4">1:1 Business Coaching & Mentoring</h3>
+              <p class="text-slate-600 mb-6 leading-relaxed">
+                Vertraulicher Reflexionsraum für deine aktuellen Führungs-, Projekt- oder Karrierethemen. Wir ordnen komplexe Gemengelagen, schärfen deine Rolle und erarbeiten konkrete Handlungsoptionen.
+              </p>
+              <ul class="space-y-3 text-sm text-slate-700 mb-8">
+                <li class="flex items-start gap-3">
+                  <span class="text-emerald-800 font-bold">✓</span>
+                  <span>Einzelsessions (60–90 Min.) oder strukturierte Begleitung über 3–6 Monate</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-emerald-800 font-bold">✓</span>
+                  <span>Systemische Fragetechniken & lösungsorientierte Methoden</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-emerald-800 font-bold">✓</span>
+                  <span>Online oder persönlich in Zürich</span>
+                </li>
+              </ul>
+            </div>
+            <a href="#kontakt" class="inline-flex items-center text-sm font-semibold text-emerald-800 hover:text-emerald-950 group">
+              Unverbindliches Vorgespräch anfragen 
+              <span class="ml-1 group-hover:translate-x-1 transition-transform">→</span>
+            </a>
+          </div>
+
+          <!-- Team & Change Sparring -->
+          <div class="bg-white p-10 rounded-2xl border border-stone-200/90 shadow-xs flex flex-col justify-between">
+            <div>
+              <div class="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-2">Für Teams & Organisationen</div>
+              <h3 class="font-serif text-2xl text-slate-900 mb-4">Team-Entwicklung & Change-Sparring</h3>
+              <p class="text-slate-600 mb-6 leading-relaxed">
+                Begleitung von Teams und Projektleitenden in Phasen von Neuausrichtung, Skalierung oder methodischem Wandel. Damit Zusammenarbeit nicht an unklaren Zielen oder Reibungsverlusten scheitert.
+              </p>
+              <ul class="space-y-3 text-sm text-slate-700 mb-8">
+                <li class="flex items-start gap-3">
+                  <span class="text-emerald-800 font-bold">✓</span>
+                  <span>Fokussierte Workshops zur Rollen-, Ziel- und Schnittstellenklärung</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-emerald-800 font-bold">✓</span>
+                  <span>Moderation anspruchsvoller Retrospektiven und Konfliktklärungen</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-emerald-800 font-bold">✓</span>
+                  <span>Praxisnahes Sparring für Agile Leaders, Product Owner & Projektverantwortliche</span>
+                </li>
+              </ul>
+            </div>
+            <a href="#kontakt" class="inline-flex items-center text-sm font-semibold text-emerald-800 hover:text-emerald-950 group">
+              Anliegen unverbindlich besprechen 
+              <span class="ml-1 group-hover:translate-x-1 transition-transform">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="ueber-mich" class="py-24 bg-slate-900 text-stone-100 px-6">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-12 gap-12 items-center">
+        <div class="md:col-span-7 space-y-6">
+          <p class="text-xs font-semibold uppercase tracking-widest text-emerald-400">Über mich & Haltung</p>
+          <h2 class="font-serif text-3xl sm:text-4xl text-white tracking-tight leading-snug">
+            Fundierte Coaching-Kompetenz trifft auf echte Praxiserfahrung in komplexen Organisationen.
+          </h2>
+          <p class="text-stone-300 leading-relaxed">
+            Gutes Business Coaching braucht beides: methodische Tiefe in der Prozessbegleitung und ein echtes Verständnis dafür, wie moderne Unternehmen, Tech-Teams und Veränderungsprojekte im Alltag funktionieren.
+          </p>
+          <p class="text-stone-300 leading-relaxed">
+            Als <strong class="text-white font-medium">Betrieblicher Mentor mit eidgenössischem Fachausweis</strong>, erfahrener Agile Coach / Scrum Master und studierter Informatiker (M.Sc.) kenne ich den Druck zwischen strategischen Zielen, knappen Ressourcen und menschlicher Dynamik aus eigener Anschauung.
+          </p>
+          <p class="text-stone-300 leading-relaxed">
+            In meiner Arbeit verbinde ich systemisches, lösungsorientiertes Coaching mit klarer Struktur und einem ganzheitlichen Blick auf den Menschen. Ich gebe dir keine theoretischen Ratschläge von der Seitenlinie, sondern begleite dich dabei, deine eigenen Hebel wieder klar zu sehen und wirksam einzusetzen.
+          </p>
+        </div>
+
+        <div class="md:col-span-5 bg-slate-800/70 border border-slate-700 p-8 rounded-2xl space-y-6">
+          <h3 class="font-serif text-xl text-white border-b border-slate-700 pb-3">Qualifikationen & Hintergrund</h3>
+          <ul class="space-y-4 text-sm text-stone-300">
+            <li class="flex flex-col">
+              <span class="text-white font-medium">Betrieblicher Mentor mit eidg. Fachausweis</span>
+              <span class="text-stone-400 text-xs">Professionelle Begleitung von Coaching-, Beratungs- und Lernprozessen</span>
+            </li>
+            <li class="flex flex-col">
+              <span class="text-white font-medium">Langjährige Praxis als Agile Coach & Scrum Master</span>
+              <span class="text-stone-400 text-xs">Begleitung von Führungskräften, Teams und grossen Transformationsvorhaben</span>
+            </li>
+            <li class="flex flex-col">
+              <span class="text-white font-medium">M.Sc. in Informatik & interdisziplinärer Hintergrund</span>
+              <span class="text-stone-400 text-xs">Analytische Klarheit kombiniert mit systemischem und kulturübergreifendem Denken</span>
+            </li>
+            <li class="flex flex-col">
+              <span class="text-white font-medium">Methodischer Fokus</span>
+              <span class="text-stone-400 text-xs">Systemisches Coaching, lösungsorientierte Kurzzeitberatung & reflektierte Selbstführung</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="ablauf" class="py-24 px-6 bg-white border-b border-stone-200/70">
+      <div class="max-w-6xl mx-auto">
+        <div class="max-w-2xl mb-16">
+          <p class="text-xs font-semibold uppercase tracking-widest text-emerald-800 mb-3">Transparenter Prozess</p>
+          <h2 class="font-serif text-3xl sm:text-4xl text-slate-900 tracking-tight mb-4">
+            In drei klaren Schritten zur Zusammenarbeit
+          </h2>
+          <p class="text-slate-600 leading-relaxed">
+            Vertrauen und eine klare Zielorientierung bilden das Fundament. So starten wir gemeinsam:
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          {steps.map((item) => (
+            <div class="relative p-8 rounded-2xl bg-stone-50 border border-stone-200/80">
+              <div class="font-serif text-3xl text-emerald-800/40 font-semibold mb-4">{item.step}</div>
+              <h3 class="font-serif text-xl text-slate-900 mb-3">{item.title}</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">{item.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact / Booking CTA Section -->
+    <section id="kontakt" class="py-24 px-6">
+      <div class="max-w-4xl mx-auto bg-white border border-stone-200 rounded-3xl p-8 sm:p-14 shadow-xs text-center">
+        <p class="text-xs font-semibold uppercase tracking-widest text-emerald-800 mb-3">Nächster Schritt</p>
+        <h2 class="font-serif text-3xl sm:text-4xl text-slate-900 tracking-tight mb-4">
+          Lass uns unverbindlich ins Gespräch kommen
+        </h2>
+        <p class="text-slate-600 max-w-xl mx-auto mb-8 leading-relaxed">
+          Buche dir direkt einen kostenlosen 25-minütigen Kennenlern-Slot oder schreib mir eine kurze Nachricht mit deinem Anliegen. Ich melde mich innerhalb von 24 Stunden bei dir.
+        </p>
+
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a 
+            href="mailto:kontakt@deine-domain.ch?subject=Anfrage%20Kennenlerngespraech%20Business%20Coaching" 
+            class="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-white bg-emerald-800 hover:bg-emerald-900 rounded-lg transition-colors shadow-xs"
+          >
+            Kennenlerngespräch per E-Mail anfragen
+          </a>
+          <a 
+            href="https://www.linkedin.com/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-slate-700 bg-stone-50 hover:bg-stone-100 border border-stone-200 rounded-lg transition-colors"
+          >
+            Auf LinkedIn vernetzen
+          </a>
+        </div>
+
+        <p class="text-xs text-slate-400 mt-6">
+          Tipp für den Ausbau: Hier kann später direkt ein interaktives Buchungs-Widget von Cal.com oder Calendly eingebettet werden.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-stone-100 border-t border-stone-200/80 py-12 px-6 text-sm text-slate-500">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        <span class="font-serif text-slate-800 font-medium">Thomas Kolonko</span> · Business Coaching & Mentoring · Zürich
+      </div>
+		<div class="flex gap-6">
+			<a href="/impressum" class="hover:text-slate-900 transition-colors">Impressum</a>
+			<a href="/datenschutz" class="hover:text-slate-900 transition-colors">Datenschutz</a>
+			<a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="hover:text-slate-900 transition-colors">LinkedIn</a>
+		</div>
+    </div>
+  </footer>
+</Layout>
