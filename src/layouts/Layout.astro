@@ -1,0 +1,32 @@
+---
+import '@fontsource/lora/400.css';
+import '@fontsource/lora/500.css';
+import '@fontsource/lora/600.css';
+import '@fontsource/lora/400-italic.css';
+import '@fontsource-variable/inter';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const {
+  title,
+  description = "Systemisches Business Coaching & Sparring für Führungskräfte, Projektleiter und Teams im Wandel. Klarheit gewinnen, wirksam führen."
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="de-CH">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="generator" content={Astro.generator} />
+  </head>
+  <body class="bg-stone-50 text-slate-900 font-sans antialiased selection:bg-emerald-800 selection:text-white">
+    <slot />
+  </body>
+</html>
