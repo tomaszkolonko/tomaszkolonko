@@ -9,8 +9,11 @@ const {
   namespace = "cal-booking" 
 } = Astro.props;
 
-// Schneidet "https://cal.com/" automatisch ab, falls die ganze URL übergeben wurde
-const cleanCalLink = calLink.replace(/^https?:\/\/(www\.|app\.)?cal\.com\//, '');
+// Entfernt "https://cal.com/" und allfällige Theme-Parameter, damit wir sie sauber selbst setzen
+const cleanCalLink = calLink
+  .replace(/^https?:\/\/(www\.|app\.)?cal\.com\//, '')
+  .split('?')[0];
+
 const containerId = `cal-inline-${namespace}`;
 ---
 
@@ -51,16 +54,38 @@ const containerId = `cal-inline-${namespace}`;
 
   Cal("init", namespace, { origin: "https://app.cal.com" });
 
+  // 1. Theme direkt in den Inline-Config-Optionen auf "light" zwingen
   Cal.ns[namespace]("inline", {
     elementOrSelector: `#${containerId}`,
     calLink: cleanCalLink,
     layout: "month_view",
+    config: {
+      theme: "light",
+    },
   });
 
+  // 2. Exakte Farbpalette deiner Website (White, Stone, Slate & Emerald-800) übergeben
   Cal.ns[namespace]("ui", {
     theme: "light",
-    styles: { branding: { brandColor: "#065f46" } },
     hideEventTypeDetails: false,
     layout: "month_view",
+    cssVarsPerTheme: {
+      light: {
+        "cal-brand": "#065f46",            // emerald-800 (Buttons & aktive Auswahl)
+        "cal-brand-emphasis": "#064e3b",   // emerald-900 (Hover-Effekt)
+        "cal-brand-text": "#ffffff",       // Weisse Schrift auf Emerald-Buttons
+        "cal-bg": "#ffffff",               // Haupt-Hintergrund (Reinweiss wie deine Karte)
+        "cal-bg-muted": "#fafaf9",         // stone-50 (Dezenter Hintergrund für freie Tage)
+        "cal-bg-subtle": "#f5f5f4",        // stone-100 (Wochentage / Hover)
+        "cal-bg-emphasis": "#e7e5e4",      // stone-200 (Aktiver Fokus)
+        "cal-border": "#e7e5e4",           // stone-200 (Rahmenfarbe)
+        "cal-border-default": "#e7e5e4",   // stone-200
+        "cal-border-subtle": "#f5f5f4",    // stone-100
+        "cal-border-booker": "#e7e5e4",    // stone-200 (Trennlinien im Kalender)
+        "cal-text": "#0f172a",             // slate-900 (Hauptschrift)
+        "cal-text-emphasis": "#0f172a",    // slate-900 (Überschriften & Zahlen)
+        "cal-text-muted": "#475569",       // slate-600 (Beschreibungstext)
+      },
+    },
   });
 </script>
