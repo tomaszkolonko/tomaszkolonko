@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Calendly from '../components/Calendly.astro';
 
 const challenges = [
   {
@@ -295,35 +296,37 @@ const steps = [
 
     <!-- Contact / Booking CTA Section -->
     <section id="kontakt" class="py-24 px-6">
-      <div class="max-w-4xl mx-auto bg-white border border-stone-200 rounded-3xl p-8 sm:p-14 shadow-xs text-center">
-        <p class="text-xs font-semibold uppercase tracking-widest text-emerald-800 mb-3">Nächster Schritt</p>
-        <h2 class="font-serif text-3xl sm:text-4xl text-slate-900 tracking-tight mb-4">
-          Lass uns unverbindlich ins Gespräch kommen
-        </h2>
-        <p class="text-slate-600 max-w-xl mx-auto mb-8 leading-relaxed">
-          Buche dir direkt einen kostenlosen 25-minütigen Kennenlern-Slot oder schreib mir eine kurze Nachricht mit deinem Anliegen. Ich melde mich innerhalb von 24 Stunden bei dir.
-        </p>
+      <div class="max-w-5xl mx-auto bg-white border border-stone-200 rounded-3xl p-6 sm:p-12 shadow-xs">
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <p class="text-xs font-semibold uppercase tracking-widest text-emerald-800 mb-3">Nächster Schritt</p>
+          <h2 class="font-serif text-3xl sm:text-4xl text-slate-900 tracking-tight mb-4">
+            Lass uns unverbindlich ins Gespräch kommen
+          </h2>
+          <p class="text-slate-600 leading-relaxed">
+            Wähle direkt einen passenden Termin für unser kostenloses 25-minütiges Kennenlerngespräch oder schreib mir eine kurze Nachricht.
+          </p>
+        </div>
 
-        <div class="flex flex-col sm:flex-row justify-center gap-4">
-          <a 
-            href="mailto:kontakt@deine-domain.ch?subject=Anfrage%20Kennenlerngespraech%20Business%20Coaching" 
-            class="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-white bg-emerald-800 hover:bg-emerald-900 rounded-lg transition-colors shadow-xs"
-          >
-            Kennenlerngespräch per E-Mail anfragen
-          </a>
+        <!-- Eingebetteter Calendly-Kalender (Hier deinen echten Link eintragen) -->
+        <Calendly url="https://calendly.com/DEIN-CALENDLY-NAME/30min" />
+
+        <!-- Alternative Kontaktmöglichkeiten darunter -->
+        <div class="mt-10 pt-8 border-t border-stone-200/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-600">
+          <div>
+            Kein passender Termin dabei? Schreib mir direkt an: 
+            <a href="mailto:kontakt@tomaszkolonko.ch" class="font-medium text-emerald-800 hover:underline ml-1">
+              kontakt@tomaszkolonko.ch
+            </a>
+          </div>
           <a 
             href="https://www.linkedin.com/" 
             target="_blank" 
             rel="noopener noreferrer"
-            class="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-slate-700 bg-stone-50 hover:bg-stone-100 border border-stone-200 rounded-lg transition-colors"
+            class="inline-flex items-center font-medium text-slate-700 hover:text-emerald-800 transition-colors"
           >
-            Auf LinkedIn vernetzen
+            Auf LinkedIn vernetzen →
           </a>
         </div>
-
-        <p class="text-xs text-slate-400 mt-6">
-          Tipp für den Ausbau: Hier kann später direkt ein interaktives Buchungs-Widget von Cal.com oder Calendly eingebettet werden.
-        </p>
       </div>
     </section>
   </main>
