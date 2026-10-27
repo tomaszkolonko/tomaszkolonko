@@ -1,10 +1,10 @@
 // Edit the website wording here; the page layout and styling are in src/pages/index.astro.
 export const homepage = {
-  pageTitle: 'Business Coaching & Sparring | Klarheit in Führung & Wandel',
+  pageTitle: 'Thomas Kolonko | Business Coaching, Leadership & Mentoring in Zürich',
 
   brand: {
     name: 'Thomas Kolonko',
-    descriptor: 'Business Coaching',
+    descriptor: 'Business & Leadership Coaching',
   },
 
   navigation: [
@@ -15,17 +15,16 @@ export const homepage = {
   ],
 
   hero: {
-    eyebrow: 'Business Coaching & Sparring · Zürich & Online',
-    title: 'Klarheit gewinnen, wenn Führung und Projekte komplex werden.',
-    description: `Systemisches Coaching und Begleitung auf Augenhöhe für Führungskräfte, Projektleiter und Teams in Veränderungsprozessen.
-      Strukturiert reflektieren, Muster erkennen und wirksam handeln.`,
+    eyebrow: 'Business & Leadership Coaching · Betriebliches Mentoring · Zürich & Online',
+    title: 'Klarheit gewinnen, wenn Führung, Wandel und Projekte komplex werden.',
+    description: `Systemisch-lösungsorientiertes Coaching und Sparring auf Augenhöhe für Führungskräfte, Agile Leaders und Fachkräfte in Veränderungsprozessen. Eigene Muster reflektieren, vorhandene Stärken aktivieren und selbstwirksam handeln.`,
     headerAction: 'Erstgespräch buchen',
     primaryAction: 'Kostenloses Kennenlernen vereinbaren',
     secondaryAction: 'Typische Themen entdecken',
     credentials: [
       'Betrieblicher Mentor mit eidg. Fachausweis',
-      'Systemisch & lösungsorientiert',
-      'Mehrjährige Führungserfahrung in IT & Transformation',
+      'Mitglied der Swiss Coaching Association (SCA)',
+      'ICF PCC Level 2 (Ausbildung erfolgreich abgeschlossen)',
     ],
   },
 
@@ -38,64 +37,56 @@ export const homepage = {
 
   challenges: {
     eyebrow: 'Typische Ausgangslagen',
-    title: 'Wann ein Sparring auf Augenhöhe den Unterschied macht',
-    introduction: `Im operativen Tagesgeschäft bleibt oft wenig Raum, um komplexe Situationen mit Abstand zu betrachten.
-      Genau hier setzt professionelles Business Coaching an.`,
+    title: 'Wann ein reflektiertes Sparring auf Augenhöhe den Unterschied macht',
+    introduction: `Veränderungen in Organisationen fordern uns fachlich wie emotional. Du bist der Experte für deine eigene Realität – ich gestalte den passenden Reflexionsraum, damit du deine eigene „Landkarte“ erweitern und stimmige Lösungswege entwickeln kannst.`,
     cards: [
       {
-        tag: 'Rollenwechsel & Führung',
-        title: 'Souverän in der neuen Führungsrolle',
-        description: `Vom Fachexperten zur Führungskraft oder mitten im Spannungsfeld einer Sandwich-Position:
-          Entwickle deinen eigenen, authentischen Führungsstil ohne Mikromanagement.`,
+        tag: 'Leadership & Rollenverständnis',
+        title: 'Souverän führen – auch ohne Machtkeule',
+        description: `Ob neu in der Führungsrolle, im Spannungsfeld einer Sandwich-Position oder als Servant Leader ohne direkte Weisungsbefugnis: Entwickle einen authentischen, mitarbeiterzentrierten Führungsstil und triff auch unter Druck klare Entscheidungen.`,
       },
       {
-        tag: 'Transformation & Projekte',
-        title: 'Orientierung in komplexen Vorhaben',
-        description: `Wenn zentrale Leitplanken fehlen, Stakeholder in verschiedene Richtungen ziehen und die Komplexität steigt:
-          Fokus bewahren, Prioritäten schärfen und handlungsfähig bleiben.`,
+        tag: 'Coaching in Veränderungsprozessen',
+        title: 'Orientierung und Gestaltungskraft im Wandel',
+        description: `Wenn Organisationen sich transformieren, sind zukünftige Rollen und Aufgaben oft noch unscharf. Wir stärken deine Veränderungskompetenz, klären den Umgang mit Unsicherheiten oder Widerstand und nutzen den offenen Gestaltungsspielraum aktiv für deine Positionierung.`,
       },
       {
-        tag: 'System & Teamdynamik',
-        title: 'Reibungsverluste & Konflikte lösen',
-        description: `Unterschwellige Spannungen im Team oder Silodenken erkennen, offen ansprechen und in produktive
-          Zusammenarbeit sowie psychologische Sicherheit verwandeln.`,
+        tag: 'Selbstwirksamkeit & Resilienz',
+        title: 'Eigenverantwortung und emotionale Balance',
+        description: `Verstehen, wie eigene Gedanken und Deutungsmuster Resultate hervorbringen: Lerne, mit Druck und Emotionen konstruktiv umzugehen, deine persönliche Resilienz gezielt aufzubauen und aus einer Haltung echter Selbstwirksamkeit heraus zu agieren.`,
       },
       {
-        tag: 'Persönliche Standortbestimmung',
-        title: 'Klarheit bei wichtigen Entscheidungen',
-        description: `Berufliche Neuorientierung, gesunde Abgrenzung bei hoher Belastung oder der nächste Karriereschritt:
-          Mit strukturierter Reflexion zu stimmigen Entscheidungen.`,
+        tag: 'Systemdynamik & Brückenbau',
+        title: 'Verhärtete Fronten und Konflikte auflösen',
+        description: `Menschen agieren nie isoliert, sondern immer als Teil eines Systems. Wir machen Wechselwirkungen sowie Kommunikations- und Verhaltensmuster im Team sichtbar, um Silodenken aufzubrechen und echte Kooperation zu ermöglichen.`,
       },
     ],
   },
 
   services: {
-    eyebrow: 'Zusammenarbeit',
-    title: 'Fokussiertes Angebot für nachhaltige Wirkung',
-    introduction: `Keine vorgefertigten Standard-Schablonen, sondern massgeschneiderte Begleitung – abgestimmt auf deine Rolle,
-      dein System und dein Ziel.`,
+    eyebrow: 'Zusammenarbeit & Rollenverständnis',
+    title: 'Fokussierte Begleitung – abgestimmt auf dein System und dein Ziel',
+    introduction: `Coaching ist für mich Hilfe zur Selbsthilfe auf Basis von Freiwilligkeit, absoluter Vertraulichkeit und Transparenz. Je nach Anliegen begleite ich dich klar deklariert coachend (durch gezielte Reflexionsfragen), trainierend (beim Einüben neuer Verhaltensweisen) oder beratend (mit neutralen Praxis-Optionen).`,
     cards: [
       {
-        audience: 'Für Einzelpersonen & Führungskräfte',
-        title: '1:1 Business Coaching & Mentoring',
-        description: `Vertraulicher Reflexionsraum für deine aktuellen Führungs-, Projekt- oder Karrierethemen. Wir ordnen komplexe
-          Gemengelagen, schärfen deine Rolle und erarbeiten konkrete Handlungsoptionen.`,
+        audience: 'Für Führungskräfte & Projektleitende',
+        title: '1:1 Business & Leadership Coaching',
+        description: `Vertrauliches Sparring für deine Führungs-, Transformations- oder Karrierethemen. Anstatt endlos in Problemursachen der Vergangenheit zu graben, richten wir den Fokus auf deine Ziele, bereits funktionierende Ausnahmen und konkrete Handlungsoptionen.`,
         points: [
-          'Einzelsessions (60–90 Min.) oder strukturierte Begleitung über 3–6 Monate',
-          'Systemische Fragetechniken & lösungsorientierte Methoden',
-          'Online oder persönlich in Zürich',
+          'Einzelsessions (45–90 Min.) oder strukturierte Prozessbegleitung über mehrere Monate',
+          'Integraler, systemisch-lösungsorientierter Ansatz (nach Steve de Shazer) & Positive Psychologie',
+          'Arbeit mit Auftragsklärung (auf Wunsch auch im Dreiecksvertrag mit dem Arbeitgeber)',
         ],
         action: 'Unverbindliches Vorgespräch anfragen',
       },
       {
-        audience: 'Für Teams & Organisationen',
-        title: 'Team-Entwicklung & Change-Sparring',
-        description: `Begleitung von Teams und Projektleitenden in Phasen von Neuausrichtung, Skalierung oder methodischem Wandel.
-          Damit Zusammenarbeit nicht an unklaren Zielen oder Reibungsverlusten scheitert.`,
+        audience: 'Für Fachkräfte, Scrum Master & Change Agents',
+        title: 'Betriebliches Mentoring & Change-Sparring',
+        description: `Praxisnahe Begleitung für Menschen, die Veränderung in komplexen Organisationen gestalten oder selbst mitten im Wandel stehen. Wir schärfen deine Rolle im System, bauen nachhaltige Resilienz auf und stärken deine Wirksamkeit im Alltag.`,
         points: [
-          'Fokussierte Workshops zur Rollen-, Ziel- und Schnittstellenklärung',
-          'Moderation anspruchsvoller Retrospektiven und Konfliktklärungen',
-          'Praxisnahes Sparring für Agile Leaders, Product Owner & Projektverantwortliche',
+          'Sparring für Agile Coaches, Scrum Master, Product Owner und Projektleitende',
+          'Stärkung von Selbstführung, Stressmanagement und souveräner Kommunikation im Wandel',
+          'Online oder persönlich in ruhiger Atmosphäre in Zürich',
         ],
         action: 'Anliegen unverbindlich besprechen',
       },
@@ -103,60 +94,53 @@ export const homepage = {
   },
 
   about: {
-    eyebrow: 'Über mich & Haltung',
-    title: 'Fundierte Coaching-Kompetenz trifft auf echte Praxiserfahrung in komplexen Organisationen.',
-    introduction: `Gutes Business Coaching braucht beides: methodische Tiefe in der Prozessbegleitung und ein echtes Verständnis dafür,
-      wie moderne Unternehmen, Tech-Teams und Veränderungsprojekte im Alltag funktionieren.`,
-    approach: `In meiner Arbeit verbinde ich systemisches, lösungsorientiertes Coaching mit klarer Struktur und einem ganzheitlichen
-      Blick auf den Menschen. Ich gebe dir keine theoretischen Ratschläge von der Seitenlinie, sondern begleite dich dabei,
-      deine eigenen Hebel wieder klar zu sehen und wirksam einzusetzen.`,
+    eyebrow: 'Über mich, Menschenbild & Haltung',
+    title: 'Analytische Klarheit trifft auf tiefe Wertschätzung für das Menschliche.',
+    introduction: `Mein Weg führte mich über ein Sinologie-Studium mit zwei Jahren in China und einen Master in Informatik (M.Sc.) direkt in die Praxis grosser Organisationen. Während ich früher dachte, nur „harte Skills“ wie Mathematik und Technik würden zählen, zeigten mir meine Stationen als Software Engineer, Scrum Master, stellvertretender Release Train Engineer (RTE) und Agile Coach bei der UBS in Zürich immer wieder: Meine wahre Stärke liegt im Menschlichen – und im Brückenbauen zwischen verhärteten Fronten.`,
+    approach: `Mein Menschenbild verbindet drei Pfeiler: den Konstruktivismus (du konstruierst deine eigene Wirklichkeit und trägst die passende Lösung bereits in dir), den Humanismus nach Carl Rogers (bedingungslose Wertschätzung, Empathie und Echtheit) sowie die Positive Psychologie (Fokus auf Stärken und Potenzialentfaltung statt reiner Defizitanalyse).`,
     credentialLeadIn: 'Als ',
-    credential: 'Betrieblicher Mentor mit eidgenössischem Fachausweis',
-    credentialFollowUp: `, erfahrener Agile Coach / Scrum Master und studierter Informatiker (M.Sc.) kenne ich den Druck zwischen
-      strategischen Zielen, knappen Ressourcen und menschlicher Dynamik aus eigener Anschauung.`,
-    qualificationsTitle: 'Qualifikationen & Hintergrund',
+    credential: 'Betrieblicher Mentor mit eidgenössischem Fachausweis, Vollmitglied der SCA',
+    credentialFollowUp: ` und zertifizierter Business & Leadership Coach (Living Sense, ICF PCC Level 2 bestanden) verbinde ich methodische Tiefe mit gelebter Servant-Leadership-Erfahrung in komplexen Transformationsumfeldern.`,
+    qualificationsTitle: 'Ausbildungen, Mitgliedschaften & Hintergrund',
     qualifications: [
       {
-        title: 'Betrieblicher Mentor mit eidg. Fachausweis',
-        description: 'Professionelle Begleitung von Coaching-, Beratungs- und Lernprozessen',
+        title: 'Betrieblicher Mentor mit eidg. Fachausweis & SCA-Mitglied',
+        description: 'Eidgenössisches Diplom (Living Sense Coaching Institut) sowie Vollmitglied der Swiss Coaching Association (SCA) mit Arbeit nach anerkannten ethischen Qualitätsstandards.',
       },
       {
-        title: 'Langjährige Praxis als Agile Coach & Scrum Master',
-        description: 'Begleitung von Führungskräften, Teams und grossen Transformationsvorhaben',
+        title: 'ICF PCC Level 2 (bestanden) · Business, Leadership & Integral Coach',
+        description: 'Erfolgreich abgeschlossene Ausbildungen in Integral Coaching sowie Business & Leadership Coaching (Living Sense) und bestandene ICF PCC Level 2 Prüfung (in Akkreditierung).',
       },
       {
-        title: 'M.Sc. in Informatik & interdisziplinärer Hintergrund',
-        description: 'Analytische Klarheit kombiniert mit systemischem und kulturübergreifendem Denken',
+        title: 'Praxis als Agile Coach, Scrum Master & stv. RTE',
+        description: 'Mehrjährige Erfahrung in der Begleitung von Teams, Scrum Mastern und Führungskräften in agilen Transformationen (u. a. bei der UBS in Zürich).',
       },
       {
-        title: 'Methodischer Fokus',
-        description: 'Systemisches Coaching, lösungsorientierte Kurzzeitberatung & reflektierte Selbstführung',
+        title: 'M.Sc. in Computer Science & Hintergrund in Sinologie',
+        description: 'Kombination aus analytisch-strukturiertem Denken und einem tiefen, kulturübergreifenden Verständnis für unterschiedliche Perspektiven und Wertesysteme.',
       },
     ],
   },
 
   process: {
     eyebrow: 'Transparenter Prozess',
-    title: 'In drei klaren Schritten zur Zusammenarbeit',
-    introduction: 'Vertrauen und eine klare Zielorientierung bilden das Fundament. So starten wir gemeinsam:',
+    title: 'Strukturierte Begleitung mit klarem Transfer in deinen Alltag',
+    introduction: 'Ein wirksames Coaching braucht einen sicheren Rahmen, Freiwilligkeit und deine Bereitschaft zur Selbstreflexion. So arbeiten wir zusammen:',
     steps: [
       {
         number: '01',
-        title: 'Unverbindliches Kennenlernen (25 Min.)',
-        description: `In einem kostenlosen Videocall oder Telefonat lernen wir uns kennen. Wir besprechen dein aktuelles Anliegen,
-          klären offene Fragen und prüfen, ob die Chemie zwischen uns stimmt.`,
+        title: 'Unverbindliches Vorgespräch (25 Min.)',
+        description: `Wir lernen uns kostenlos per Videocall oder Telefon kennen, besprechen deine Ausgangslage und prüfen, ob die Chemie und die Rahmenbedingungen für eine vertrauensvolle Zusammenarbeit auf Augenhöhe stimmen.`,
       },
       {
         number: '02',
-        title: 'Auftragsklärung & Zielbild',
-        description: `Zu Beginn der Zusammenarbeit definieren wir ein klares Ziel: Woran merkst du im Alltag konkret, dass sich
-          das Coaching für dich gelohnt hat? Kein endloses Kreisen, sondern Fokus.`,
+        title: 'Klare Auftragsklärung & Zielbild',
+        description: `Wir definieren dein konkretes Zielbild und halten den Rahmen transparent fest (bei Bedarf auch als Dreiecksvertrag mit dem Arbeitgeber). Woran wirst du im Alltag ganz konkret merken, dass sich unsere Arbeit für dich gelohnt hat?`,
       },
       {
         number: '03',
-        title: 'Coaching-Sessions & Transfer',
-        description: `In vertraulichen Sessions (online oder vor Ort in Zürich) arbeiten wir systemisch und lösungsorientiert
-          an deinen Fällen – mit direktem Transfer in deinen Führungs- und Berufsalltag.`,
+        title: '5-Phasen-Prozess & Alltagstransfer',
+        description: `Jede Sitzung folgt einer klaren Struktur (Orientierung, Klärung, Veränderung, Integration und Abschluss). Mit systemischen Fragen, Perspektivenwechseln und kleinen, handlungsorientierten Experimenten sichern wir den direkten Transfer in deine Praxis.`,
       },
     ],
   },
@@ -164,8 +148,7 @@ export const homepage = {
   contact: {
     eyebrow: 'Nächster Schritt',
     title: 'Lass uns unverbindlich ins Gespräch kommen',
-    description: `Wähle direkt einen passenden Termin für unser kostenloses 25-minütiges Kennenlerngespräch oder schreib mir
-      eine kurze Nachricht.`,
+    description: `Wähle direkt einen passenden Termin für unser kostenloses 25-minütiges Kennenlerngespräch oder schreib mir eine kurze Nachricht zu deinem Anliegen.`,
     calendlyUrl: 'https://calendly.com/tz-kolonko/coaching-1-1',
     alternative: 'Kein passender Termin dabei? Schreib mir direkt an:',
     email: 'kontakt@tomaszkolonko.ch',
@@ -173,7 +156,7 @@ export const homepage = {
   },
 
   footer: {
-    summary: 'Business Coaching & Mentoring · Zürich',
+    summary: 'Business & Leadership Coaching · Betriebliches Mentoring · Zürich',
     impressum: 'Impressum',
     privacy: 'Datenschutz',
     linkedIn: 'LinkedIn',
