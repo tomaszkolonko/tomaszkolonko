@@ -7,9 +7,6 @@ import Cal from '../components/Cal.astro';
   title="Coaching-Session buchen (60 Min.) | Thomas Kolonko"
   description="Terminbuchung für laufende Business Coaching & Mentoring Begleitungen."
 >
-  <!-- Verhindert, dass Google diese interne Klienten-Seite in den Suchergebnissen listet -->
-  <meta slot="head" name="robots" content="noindex, nofollow" />
-
   <header class="sticky top-0 z-50 bg-stone-50/90 backdrop-blur-md border-b border-stone-200/80">
     <div class="max-w-5xl mx-auto px-6 h-20 flex items-center justify-between">
       <a href="/" class="font-serif text-xl font-medium tracking-tight text-slate-900">
@@ -29,11 +26,11 @@ import Cal from '../components/Cal.astro';
           Nächste Coaching-Session vereinbaren (60 Min.)
         </h1>
         <p class="text-slate-600 leading-relaxed">
-          Wähle hier direkt einen passenden Termin für unsere nächste Sitzung (online oder vor Ort in Zürich). Falls du einen bestehenden Termin verschieben möchtest, kannst du auch direkt den Link in deiner letzten Terminbestätigungs-E-Mail nutzen.
+          Wähle hier direkt einen passenden Termin für unsere nächste 60-minütige Sitzung (online oder vor Ort in Zürich).
         </p>
       </div>
 
-      <!-- Dein 60-Minuten Event-Typ bei Cal.com -->
+      <!-- Hier wird dein 60-Minuten-Kalender geladen -->
       <Cal calLink="https://cal.com/thomas-kolonko-i4xil4/60min" namespace="session60" />
     </div>
   </main>

@@ -146,14 +146,15 @@ export const homepage = {
   },
 
 contact: {
-  eyebrow: 'Nächster Schritt',
-  title: 'Lass uns unverbindlich ins Gespräch kommen',
-  description: `Wähle direkt einen passenden Termin für unser kostenloses 25-minütiges Kennenlerngespräch oder schreib mir eine kurze Nachricht zu deinem Anliegen.`,
-  calLink: 'https://cal.com/thomas-kolonko-i4xil4/25min',
-  alternative: 'Kein passender Termin dabei? Schreib mir direkt an:',
-  email: 'kontakt@tomaszkolonko.ch',
-  linkedInAction: 'Auf LinkedIn vernetzen',
-},
+    eyebrow: 'Nächster Schritt',
+    title: 'Lass uns unverbindlich ins Gespräch kommen',
+    description: `Wähle direkt einen passenden Termin für unser kostenloses 25-minütiges Kennenlerngespräch oder schreib mir eine kurze Nachricht zu deinem Anliegen.`,
+    calLink25: 'https://cal.com/thomas-kolonko-i4xil4/25min',
+    calLink60: 'https://cal.com/thomas-kolonko-i4xil4/60min',
+    alternative: 'Kein passender Termin dabei? Schreib mir direkt an:',
+    email: 'kontakt@tomaszkolonko.ch',
+    linkedInAction: 'Auf LinkedIn vernetzen',
+  },
 
   footer: {
     summary: 'Business & Leadership Coaching · Betriebliches Mentoring · Zürich',

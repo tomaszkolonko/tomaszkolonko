@@ -1,16 +1,16 @@
 ---
 interface Props {
-  /** Dein Cal.com Pfad im Format "benutzername/event-slug", z. B. "tomaszkolonko/kennenlernen" */
   calLink?: string;
-  /** Eindeutige ID, falls mal mehrere Kalender existieren */
   namespace?: string;
 }
 
 const { 
-  calLink = "tomaszkolonko/kennenlernen", 
+  calLink = "thomas-kolonko-i4xil4/25min", 
   namespace = "cal-booking" 
 } = Astro.props;
 
+// Schneidet "https://cal.com/" automatisch ab, falls die ganze URL übergeben wurde
+const cleanCalLink = calLink.replace(/^https?:\/\/(www\.|app\.)?cal\.com\//, '');
 const containerId = `cal-inline-${namespace}`;
 ---
 
@@ -21,7 +21,7 @@ const containerId = `cal-inline-${namespace}`;
   ></div>
 </div>
 
-<script is:inline define:vars={{ calLink, namespace, containerId }}>
+<script is:inline define:vars={{ cleanCalLink, namespace, containerId }}>
   (function (C, A, L) {
     let p = function (a, ar) { a.q.push(ar); };
     let d = C.document;
@@ -53,13 +53,13 @@ const containerId = `cal-inline-${namespace}`;
 
   Cal.ns[namespace]("inline", {
     elementOrSelector: `#${containerId}`,
-    calLink: calLink,
+    calLink: cleanCalLink,
     layout: "month_view",
   });
 
   Cal.ns[namespace]("ui", {
     theme: "light",
-    styles: { branding: { brandColor: "#065f46" } }, // Dein emerald-800 Farbton
+    styles: { branding: { brandColor: "#065f46" } },
     hideEventTypeDetails: false,
     layout: "month_view",
   });
