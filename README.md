@@ -25,6 +25,10 @@ There's nothing special about `src/components/`, but that's where we like to put
 
 Any static assets, like images, can be placed in the `public/` directory.
 
+## Editing website text
+
+The homepage wording is collected in [`src/content/homepage.ts`](./src/content/homepage.ts), organized into sections such as `hero`, `challenges`, `services`, and `contact`. Edit the text there without needing to search through the page layout. The visual structure and styling are in [`src/pages/index.astro`](./src/pages/index.astro). Text on the legal pages is in their respective files under `src/pages/`.
+
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
