@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Calendly from '../components/Calendly.astro';
+import Cal from '../components/Cal.astro';
 import { homepage } from '../content/homepage';
 import { Image } from 'astro:assets';
 
@@ -238,7 +238,7 @@ import scaLogo from '../assets/SCA_Mitglied.svg';
         </div>
 
         <!-- Eingebetteter Calendly-Kalender (Hier deinen echten Link eintragen) -->
-        <Calendly url={homepage.contact.calendlyUrl} />
+        <Cal calLink={homepage.contact.calLink} namespace="kennenlernen" />
 
         <!-- Alternative Kontaktmöglichkeiten darunter -->
         <div class="mt-10 pt-8 border-t border-stone-200/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-600">
