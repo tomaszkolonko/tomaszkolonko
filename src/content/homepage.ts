@@ -14,17 +14,19 @@ export const homepage = {
     { label: 'Ablauf', href: '#ablauf' },
   ],
 
-  hero: {
+hero: {
     eyebrow: 'Business & Personal Coaching · Betriebliches Mentoring · Zürich & Online',
-    title: 'Klarheit und neue Perspektiven, wenn du beruflich oder privat anstehst.',
-    description: `Manchmal drehen sich Gedanken im Kreis, Veränderungen kosten Kraft oder der nächste Schritt liegt im Nebel. Ich begleite dich systemisch und auf Augenhöhe dabei, innere Blockaden zu lösen, deine Stärken zu aktivieren und wieder selbstwirksam ins Handeln zu kommen.`,
+    title: 'Neue Perspektiven gewinnen und deinen nächsten Entwicklungsschritt gestalten.',
+    description: `Ob beruflich oder privat: Manchmal wünscht man sich frische Impulse und einen klaren Kompass,
+    um ein Anliegen mit Zuversicht anzugehen. Ich begleite dich systemisch und auf Augenhöhe dabei, deine Stärken
+    zu aktivieren, neue Lösungsräume zu öffnen und deine Ziele mit Freude und Selbstwirksamkeit zu erreichen.`,
     headerAction: 'Erstgespräch buchen',
     primaryAction: 'Kostenloses Kennenlernen vereinbaren',
-    secondaryAction: 'Typische Themen entdecken',
+    secondaryAction: 'Mögliche Themen entdecken',
     credentials: [
       'Betrieblicher Mentor mit eidg. Fachausweis',
       'Mitglied der Swiss Coaching Association (SCA)',
-      'ICF PCC Level 2 (Ausbildung erfolgreich abgeschlossen)',
+      'ICF Level 2 zertifiziert (PCC-Track)',
     ],
   },
 
@@ -38,27 +40,38 @@ export const homepage = {
   challenges: {
     eyebrow: 'Typische Ausgangslagen',
     title: 'Wann ein ehrliches Sparring auf Augenhöhe den Unterschied macht',
-    introduction: `Ob im Job, im Team oder im privaten Alltag: Oft wissen wir rational genau, was wir tun „sollten“ – und stehen trotzdem am selben Punkt an. Coaching öffnet den Raum, deine eigene Situation mit Abstand zu betrachten und einen stimmigen Durchbruch zu schaffen.`,
+    introduction: `Ob im Job, im Team oder im privaten Alltag: Oft wissen wir rational genau,
+    was wir tun „sollten“ – und stehen trotzdem am selben Punkt an.
+    Coaching öffnet den Raum, deine eigene Situation mit Abstand zu betrachten
+    und einen stimmigen Durchbruch zu schaffen.`,
     cards: [
       {
         tag: 'Feststecken & Neuorientierung',
         title: 'Wenn du anstehst und einen Durchbruch suchst',
-        description: `Du spürst, dass es so wie bisher nicht weitergeht – sei es im aktuellen Job, bei einer wichtigen Lebensentscheidung oder in einem wiederkehrenden Muster. Wir bringen Struktur in das Gedankenkarussell und machen deinen nächsten Schritt greifbar.`,
+        description: `Du spürst, dass es so wie bisher nicht weitergeht – sei es im aktuellen Job,
+          bei einer wichtigen Lebensentscheidung oder in einem wiederkehrenden Muster.
+          Wir bringen Struktur in das Gedankenkarussell und machen deinen nächsten Schritt greifbar.`,
       },
       {
         tag: 'Selbstwirksamkeit & Resilienz',
         title: 'Mit Druck, Stress und Erwartungen gesund umgehen',
-        description: `Im Berufsalltag wird oft viel Eigenverantwortung verlangt, ohne dass die Rahmenbedingungen klar sind. Lerne, deine Emotionen und Gedanken bewusst zu regulieren, gesunde Grenzen zu setzen und deine persönliche Resilienz nachhaltig zu stärken.`,
+        description: `Im Berufsalltag wird oft viel Eigenverantwortung verlangt, ohne dass
+          die Rahmenbedingungen klar sind. Lerne, deine Emotionen und Gedanken bewusst zu regulieren,
+          gesunde Grenzen zu setzen und deine persönliche Resilienz nachhaltig zu stärken.`,
       },
       {
         tag: 'Beruflicher Wandel & Umbruch',
         title: 'Sicherheit gewinnen in Veränderungsprozessen',
-        description: `Umstrukturierungen, neue Arbeitsweisen oder eine veränderte Rolle lösen oft Unsicherheit und Widerstand aus. Ich begleite dich dabei, deinen eigenen Gestaltungsspielraum im neuen System zu erkennen und deinen Platz aktiv einzunehmen.`,
+        description: `Umstrukturierungen, neue Arbeitsweisen oder eine veränderte Rolle
+          lösen oft Unsicherheit und Widerstand aus. Ich begleite dich dabei, deinen eigenen 
+          Gestaltungsspielraum im neuen System zu erkennen und deinen Platz aktiv einzunehmen.`,
       },
       {
         tag: 'Zusammenarbeit & Selbstführung',
         title: 'Reibungen lösen und authentisch wirken',
-        description: `Schwierige Gespräche mit Vorgesetzten oder Kolleg:innen, unterschwellige Konflikte im Team oder eine Rolle ohne formale Weisungsmacht: Entdecke neue Kommunikationswege und führe dich selbst (und andere) klar und kooperativ.`,
+        description: `Schwierige Gespräche mit Vorgesetzten oder Kolleg:innen, unterschwellige
+          Konflikte im Team oder eine Rolle ohne formale Weisungsmacht: Entdecke neue Kommunikationswege
+          und führe dich selbst (und andere) klar und kooperativ.`,
       },
     ],
   },
@@ -66,12 +79,17 @@ export const homepage = {
   services: {
     eyebrow: 'Zusammenarbeit & Angebot',
     title: 'Individuelle Begleitung für deinen beruflichen und persönlichen Weg',
-    introduction: `Coaching ist für mich Hilfe zur Selbsthilfe auf Basis von Freiwilligkeit, Vertrauen und absoluter Diskretion. Du bist der Experte für dein Leben – ich unterstütze dich je nach Bedarf klar deklariert coachend (durch gezielte Fragen), trainierend (beim Einüben neuer Verhaltensweisen) oder beratend (mit neutralen Impulsen).`,
+    introduction: `Coaching ist für mich Hilfe zur Selbsthilfe auf Basis von Freiwilligkeit,
+      Vertrauen und absoluter Diskretion. Du bist der Experte für dein Leben – ich unterstütze dich
+      je nach Bedarf klar deklariert coachend (durch gezielte Fragen), trainierend
+      (beim Einüben neuer Verhaltensweisen) oder beratend (mit neutralen Impulsen).`,
     cards: [
       {
         audience: 'Für Mitarbeitende, Fachkräfte & Privatpersonen',
         title: '1:1 Coaching & Standortbestimmung',
-        description: `Ein geschützter Reflexionsraum für Themen aus Beruf und Privatleben, bei denen du dir Fortschritt, Klarheit oder Entlastung wünschst. Statt endlos in der Vergangenheit zu wühlen, richten wir den Blick auf deine Ressourcen und konkrete Lösungen.`,
+        description: `Ein geschützter Reflexionsraum für Themen aus Beruf und Privatleben, bei denen du dir Fortschritt,
+        Klarheit oder Entlastung wünschst. Statt endlos in der Vergangenheit zu wühlen, richten wir den Blick
+        auf deine Ressourcen und konkrete Lösungen.`,
         points: [
           'Einzelsessions (60–90 Min.) oder Begleitung über mehrere Wochen/Monate',
           'Auflösen von Denkblockaden, Stärkung des Selbstvertrauens und klare Entscheidungsfindung',
@@ -82,7 +100,9 @@ export const homepage = {
       {
         audience: 'Im Unternehmenskontext & bei Veränderungen',
         title: 'Betriebliches Mentoring & Rollen-Sparring',
-        description: `Gezielte Unterstützung für Menschen, die im beruflichen Alltag vor neuen Anforderungen stehen – vom Einstieg in eine neue Rolle über agile Zusammenarbeit bis zum souveränen Umgang mit anspruchsvollen Team- und Führungssituationen.`,
+        description: `Gezielte Unterstützung für Menschen, die im beruflichen Alltag vor neuen Anforderungen
+        stehen – vom Einstieg in eine neue Rolle über agile Zusammenarbeit bis zum souveränen Umgang mit
+        anspruchsvollen Team- und Führungssituationen.`,
         points: [
           'Aufbau von Veränderungskompetenz, Stressmanagement und gesunder Selbstführung',
           'Praxisnahes Sparring für Fachkräfte, Projektmitarbeitende, Scrum Master & Team-Leads',
