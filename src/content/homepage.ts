@@ -32,9 +32,7 @@ hero: {
 
   portrait: {
     placeholder: 'Platzhalter für dein Porträtfoto',
-    instructionsBefore: 'Später einfach in ',
     imagePath: 'src/assets/portrait.jpg',
-    instructionsAfter: ' ablegen und hier einbinden.',
   },
 
   challenges: {
