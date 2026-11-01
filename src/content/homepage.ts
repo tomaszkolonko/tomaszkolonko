@@ -170,7 +170,7 @@ hero: {
     calLink25: 'https://cal.com/thomas-kolonko/25min',
     calLink60: 'https://cal.com/thomas-kolonko/60min',
     alternative: 'Kein passender Termin dabei? Schreib mir direkt an:',
-    email: 'kontakt@tomaszkolonko.ch',
+    email: 'info@thomaskolonko.ch',
     linkedInAction: 'Auf LinkedIn vernetzen',
   },
 
