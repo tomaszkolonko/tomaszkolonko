@@ -7,7 +7,7 @@ export default defineConfig({
   site: 'https://www.thomaskolonko.ch',
   integrations: [
     sitemap({
-      filter: (page) => page !== 'https://www.thomaskolonko.ch/session/',
+      filter: (page) => !page.endsWith('/session/'),
     }),
   ],
   vite: {

@@ -1,0 +1,133 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import LanguageSwitch from '../../components/LanguageSwitch.astro';
+---
+
+<Layout
+  title="Coaching Examples | Thomas Kolonko"
+  description="Two illustrative examples show how business coaching and operational mentoring can support people facing challenges at work."
+  language="en"
+  alternatePath="/Moegliche-Coaching-Beispiele/"
+>
+  <header class="sticky top-0 z-50 bg-stone-50/90 backdrop-blur-md border-b border-stone-200/80">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="/en/" class="font-serif text-xl font-medium tracking-tight text-slate-900">
+        Thomas Kolonko <span class="text-stone-400 font-sans text-sm font-normal ml-1 hidden sm:inline">| Coaching & Mentoring</span>
+      </a>
+      <div class="flex items-center gap-6">
+        <LanguageSwitch language="en" deHref="/Moegliche-Coaching-Beispiele/" enHref="/en/coaching-examples/" />
+        <a href="/en/" class="hidden sm:inline text-sm font-medium text-slate-600 hover:text-emerald-800 transition-colors">
+          Home
+        </a>
+        <a href="/en/#kontakt" class="inline-flex items-center justify-center px-3 sm:px-5 py-2.5 text-xs sm:text-sm font-medium text-white bg-emerald-800 hover:bg-emerald-900 rounded-lg transition-colors shadow-xs">
+          <span class="sm:hidden">Call</span><span class="hidden sm:inline">Introductory call</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="py-20 md:py-28 px-6">
+      <div class="max-w-4xl mx-auto">
+        <div class="max-w-3xl mb-14">
+          <p class="text-xs font-semibold uppercase tracking-widest text-emerald-800 mb-3">A look at coaching</p>
+          <h1 class="font-serif text-4xl sm:text-5xl text-slate-900 leading-tight tracking-tight mb-6">
+            Two examples of possible coaching topics
+          </h1>
+          <p class="text-lg text-slate-600 leading-relaxed">
+            Coaching is as individual as the people and situations clients bring. The following examples are
+            fictional and intended as a guide. They illustrate possible conversations – not fixed processes
+            or guaranteed outcomes.
+          </p>
+        </div>
+
+        <div class="space-y-8">
+          <article class="p-8 sm:p-10 rounded-2xl bg-white border border-stone-200/90 shadow-xs">
+            <p class="text-xs font-semibold uppercase tracking-widest text-emerald-800 mb-3">Collaboration & leadership</p>
+            <h2 class="font-serif text-2xl sm:text-3xl text-slate-900 mb-6">
+              Preparing for a difficult conversation as a project lead
+            </h2>
+            <div class="grid sm:grid-cols-2 gap-8">
+              <div>
+                <h3 class="font-semibold text-slate-900 mb-2">The situation</h3>
+                <p class="text-slate-600 leading-relaxed">
+                  A project lead finds that team agreements are repeatedly not being kept. She wants to address
+                  this without putting further strain on the collaboration, and she has no formal authority
+                  over the team.
+                </p>
+              </div>
+              <div>
+                <h3 class="font-semibold text-slate-900 mb-2">Possible coaching work</h3>
+                <p class="text-slate-600 leading-relaxed">
+                  First, we sort through what is happening and what matters to her. Together, we explore
+                  different perspectives, clarify her scope for action and prepare a conversation that is
+                  both clear and respectful.
+                </p>
+              </div>
+            </div>
+            <p class="mt-6 pt-6 border-t border-stone-200 text-slate-600 leading-relaxed">
+              <strong class="text-slate-900 font-medium">A possible next step:</strong>
+              With a clear concern and a suitable opening, she can approach the conversation herself and
+              reflect afterwards on what changed as a result.
+            </p>
+          </article>
+
+          <article class="p-8 sm:p-10 rounded-2xl bg-white border border-stone-200/90 shadow-xs">
+            <p class="text-xs font-semibold uppercase tracking-widest text-emerald-800 mb-3">Resilience & self-regulation</p>
+            <h2 class="font-serif text-2xl sm:text-3xl text-slate-900 mb-6">
+              Finding direction amid constantly changing demands
+            </h2>
+            <div class="grid sm:grid-cols-2 gap-8">
+              <div>
+                <h3 class="font-semibold text-slate-900 mb-2">The situation</h3>
+                <p class="text-slate-600 leading-relaxed">
+                  A specialist faces frequent changes in priorities and finds himself thinking about work at
+                  home. He wants to handle the pressure better and discover where he can make a difference.
+                </p>
+              </div>
+              <div>
+                <h3 class="font-semibold text-slate-900 mb-2">Possible coaching work</h3>
+                <p class="text-slate-600 leading-relaxed">
+                  Together, we distinguish what is within his influence and what is not. He can explore which
+                  thoughts and reactions increase the pressure. Beliefs such as “I have to get everything done”
+                  or “Saying no will disappoint others” may come up. We can examine how helpful these thoughts
+                  are and what more balanced perspectives might open up. He can also notice his own warning
+                  signs and explore personal resources and helpful boundaries.
+                </p>
+              </div>
+            </div>
+            <p class="mt-6 pt-6 border-t border-stone-200 text-slate-600 leading-relaxed">
+              <strong class="text-slate-900 font-medium">A possible next step:</strong>
+              A small, self-chosen experiment – such as actively clarifying a priority or consciously wrapping
+              up at the end of the working day – can create new experiences.
+            </p>
+          </article>
+        </div>
+
+        <div class="mt-12 p-8 sm:p-10 rounded-2xl bg-emerald-900 text-white">
+          <h2 class="font-serif text-2xl sm:text-3xl mb-4">Your situation is unique</h2>
+          <p class="text-emerald-50 leading-relaxed mb-6">
+            In a free introductory call, we can talk without obligation about what is on your mind and whether
+            working together feels right for both of us.
+          </p>
+          <a href="/en/#kontakt" class="inline-flex items-center justify-center px-6 py-3 text-sm font-medium text-emerald-950 bg-white hover:bg-stone-100 rounded-lg transition-colors">
+            Arrange a free introductory call
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-stone-100 border-t border-stone-200/80 py-8 px-6 text-sm text-slate-500">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        <a href="/en/" class="font-serif text-slate-800 font-medium hover:text-emerald-800">Thomas Kolonko</a>
+        · Business, resilience & life coaching · Zurich
+      </div>
+      <div class="flex gap-6">
+        <a href="/en/legal-notice/" class="hover:text-slate-900 transition-colors">Legal notice</a>
+        <a href="/en/privacy/" class="hover:text-slate-900 transition-colors">Privacy</a>
+      </div>
+    </div>
+  </footer>
+</Layout>

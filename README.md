@@ -2,7 +2,7 @@
 
 ## Website
 
-Die Website stellt das Angebot von Thomas Kolonko vor: Business- und Personal-Coaching, betriebliches Mentoring und Sparring für Menschen in Fach-, Projekt- und Führungsrollen. Die Begleitung unterstützt bei beruflichen Herausforderungen, Veränderungen und persönlichen Anliegen – systemisch, lösungsorientiert und auf Augenhöhe. Das Angebot ist in Zürich und online verfügbar.
+Die zweisprachige Website stellt das Angebot von Thomas Kolonko auf Deutsch und Englisch vor: Business- und Personal-Coaching, betriebliches Mentoring und Sparring für Menschen in Fach-, Projekt- und Führungsrollen. Die Begleitung unterstützt bei beruflichen Herausforderungen, Veränderungen und persönlichen Anliegen – systemisch, lösungsorientiert und auf Augenhöhe. Das Angebot ist in Zürich und online verfügbar. Deutsch ist die Hauptsprache; die englische Version ist unter `/en/` erreichbar.
 
 Website: [https://www.thomaskolonko.ch](https://www.thomaskolonko.ch)
 
@@ -12,7 +12,7 @@ Die Website ist mit [Astro](https://astro.build) erstellt und wird als statische
 
 ### Website-Texte bearbeiten
 
-Die Texte der Startseite sind in [`src/content/homepage.ts`](./src/content/homepage.ts) gesammelt. Die Darstellung und Struktur befinden sich in [`src/pages/index.astro`](./src/pages/index.astro). Die Inhalte der rechtlichen Seiten stehen in den jeweiligen Dateien unter `src/pages/`.
+Die deutschen Texte der Startseite sind in [`src/content/homepage.ts`](./src/content/homepage.ts) und die englischen Übersetzungen in [`src/content/homepage.en.ts`](./src/content/homepage.en.ts) gesammelt. Die gemeinsame Darstellung befindet sich in [`src/components/HomePage.astro`](./src/components/HomePage.astro). Englische Unterseiten liegen in `src/pages/en/`; die deutschen Unterseiten liegen direkt in `src/pages/`.
 
 ### Befehle
 

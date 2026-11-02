@@ -1,18 +1,22 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Cal from '../components/Cal.astro';
+import LanguageSwitch from '../components/LanguageSwitch.astro';
 ---
 
 <Layout 
   noindex={true}
   title="Coaching-Session buchen (60 Min.) | Thomas Kolonko"
   description="Terminbuchung für laufende Business Coaching & Mentoring Begleitungen."
->c
+  language="de"
+  alternatePath="/en/session/"
+>
   <header class="sticky top-0 z-50 bg-stone-50/90 backdrop-blur-md border-b border-stone-200/80">
     <div class="max-w-5xl mx-auto px-6 h-20 flex items-center justify-between">
       <a href="/" class="font-serif text-xl font-medium tracking-tight text-slate-900">
         Thomas Kolonko <span class="text-stone-400 font-sans text-sm font-normal ml-1 hidden sm:inline">| Business & Leadership Coaching</span>
       </a>
+      <LanguageSwitch language="de" deHref="/session/" enHref="/en/session/" />
       <a href="/" class="text-sm font-medium text-emerald-800 hover:text-emerald-950 transition-colors">
         ← Zur Startseite
       </a>

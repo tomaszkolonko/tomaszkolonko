@@ -1,10 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import LanguageSwitch from '../components/LanguageSwitch.astro';
 ---
 
 <Layout
   title="Coaching-Beispiele | Thomas Kolonko"
   description="Zwei illustrative Beispiele zeigen, wie Business Coaching und betriebliches Mentoring bei beruflichen Herausforderungen begleiten können."
+  language="de"
+  alternatePath="/en/coaching-examples/"
 >
   <header class="sticky top-0 z-50 bg-stone-50/90 backdrop-blur-md border-b border-stone-200/80">
     <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
@@ -12,6 +15,7 @@ import Layout from '../layouts/Layout.astro';
         Thomas Kolonko <span class="text-stone-400 font-sans text-sm font-normal ml-1 hidden sm:inline">| Coaching & Mentoring</span>
       </a>
       <div class="flex items-center gap-6">
+        <LanguageSwitch language="de" deHref="/Moegliche-Coaching-Beispiele/" enHref="/en/coaching-examples/" />
         <a href="/" class="hidden sm:inline text-sm font-medium text-slate-600 hover:text-emerald-800 transition-colors">
           Zur Startseite
         </a>

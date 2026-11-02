@@ -1,0 +1,101 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import LanguageSwitch from '../../components/LanguageSwitch.astro';
+---
+
+<Layout
+  title="Legal Notice | Thomas Kolonko – Business Coaching"
+  description="Legal information and contact details for the website of Thomas Kolonko."
+  language="en"
+  alternatePath="/impressum/"
+>
+  <header class="sticky top-0 z-50 bg-stone-50/90 backdrop-blur-md border-b border-stone-200/80">
+    <div class="max-w-4xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="/en/" class="font-serif text-xl font-medium tracking-tight text-slate-900">
+        Thomas Kolonko <span class="text-stone-400 font-sans text-sm font-normal ml-1 hidden sm:inline">| Business Coaching</span>
+      </a>
+      <div class="flex items-center gap-6">
+        <LanguageSwitch language="en" deHref="/impressum/" enHref="/en/legal-notice/" />
+        <a href="/en/" class="text-sm font-medium text-emerald-800 hover:text-emerald-950 transition-colors">
+          <span class="sm:hidden">← Home</span><span class="hidden sm:inline">← Back to home</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="py-16 md:py-24 px-6">
+    <div class="max-w-3xl mx-auto bg-white p-8 sm:p-12 rounded-2xl border border-stone-200/80 shadow-xs space-y-8 text-slate-700 leading-relaxed">
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-widest text-emerald-800 mb-2">Legal information</p>
+        <h1 class="font-serif text-3xl sm:text-4xl text-slate-900 tracking-tight">Legal notice</h1>
+      </div>
+
+      <section class="space-y-2">
+        <h2 class="font-serif text-xl text-slate-900 font-medium">Responsible for the content of this website</h2>
+        <p>
+          <strong>Thomas Kolonko</strong><br />
+          Business Coaching & Mentoring<br />
+          [Enter street and house number]<br />
+          8000 Zurich<br />
+          Switzerland
+        </p>
+      </section>
+
+      <section class="space-y-2">
+        <h2 class="font-serif text-xl text-slate-900 font-medium">Contact</h2>
+        <p>
+          Email: <a href="mailto:info@thomaskolonko.ch" class="text-emerald-800 hover:underline">info@thomaskolonko.ch</a><br />
+          Website: <a href="https://www.thomaskolonko.ch" class="text-emerald-800 hover:underline">www.thomaskolonko.ch</a>
+        </p>
+      </section>
+
+      <section class="space-y-2">
+        <h2 class="font-serif text-xl text-slate-900 font-medium">Professional title</h2>
+        <p>Operational mentor with a Swiss Federal Diploma of Higher Education (awarded in Switzerland).</p>
+      </section>
+
+      <section class="space-y-2">
+        <h2 class="font-serif text-xl text-slate-900 font-medium">Disclaimer</h2>
+        <p class="text-sm text-slate-600">
+          The author makes no guarantee as to the accuracy, precision, timeliness, reliability or completeness
+          of the information. Claims against the author for material or non-material damage arising from
+          access to or use or non-use of the published information, misuse of the connection or technical
+          disruptions are excluded. All offers are non-binding. The author expressly reserves the right to
+          change, supplement or delete parts of the pages or the entire website, or to suspend or discontinue
+          publication, without prior notice.
+        </p>
+      </section>
+
+      <section class="space-y-2">
+        <h2 class="font-serif text-xl text-slate-900 font-medium">External links</h2>
+        <p class="text-sm text-slate-600">
+          Links to third-party websites are outside our area of responsibility. We accept no responsibility
+          for such websites. Access to and use of those websites is at the user's own risk.
+        </p>
+      </section>
+
+      <section class="space-y-2">
+        <h2 class="font-serif text-xl text-slate-900 font-medium">Copyright</h2>
+        <p class="text-sm text-slate-600">
+          Copyright and all other rights to content, images, photographs and other files on this website belong
+          exclusively to Thomas Kolonko or the rights holders specifically named. Reproduction of any
+          elements requires the prior written consent of the copyright holder.
+        </p>
+      </section>
+
+      <p class="text-xs text-slate-400 pt-4 border-t border-stone-200">
+        English translation for convenience. In case of any discrepancy, the German version prevails.
+      </p>
+    </div>
+  </main>
+
+  <footer class="bg-stone-100 border-t border-stone-200/80 py-10 px-6 text-sm text-slate-500">
+    <div class="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>© {new Date().getFullYear()} Thomas Kolonko · Zurich</div>
+      <div class="flex gap-6">
+        <a href="/en/legal-notice/" class="text-slate-900 font-medium">Legal notice</a>
+        <a href="/en/privacy/" class="hover:text-slate-900 transition-colors">Privacy</a>
+      </div>
+    </div>
+  </footer>
+</Layout>

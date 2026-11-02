@@ -1,0 +1,133 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import LanguageSwitch from '../../components/LanguageSwitch.astro';
+---
+
+<Layout
+  title="Privacy Policy | Thomas Kolonko – Business Coaching"
+  description="Privacy information about this website, its hosting, contact by email and online appointment booking."
+  language="en"
+  alternatePath="/datenschutz/"
+>
+  <header class="sticky top-0 z-50 bg-stone-50/90 backdrop-blur-md border-b border-stone-200/80">
+    <div class="max-w-4xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="/en/" class="font-serif text-xl font-medium tracking-tight text-slate-900">
+        Thomas Kolonko <span class="text-stone-400 font-sans text-sm font-normal ml-1 hidden sm:inline">| Business Coaching</span>
+      </a>
+      <div class="flex items-center gap-6">
+        <LanguageSwitch language="en" deHref="/datenschutz/" enHref="/en/privacy/" />
+        <a href="/en/" class="text-sm font-medium text-emerald-800 hover:text-emerald-950 transition-colors">
+          <span class="sm:hidden">← Home</span><span class="hidden sm:inline">← Back to home</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="py-16 md:py-24 px-6">
+    <div class="max-w-3xl mx-auto bg-white p-8 sm:p-12 rounded-2xl border border-stone-200/80 shadow-xs space-y-8 text-slate-700 leading-relaxed">
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-widest text-emerald-800 mb-2">Swiss Federal Act on Data Protection (FADP)</p>
+        <h1 class="font-serif text-3xl sm:text-4xl text-slate-900 tracking-tight">Privacy policy</h1>
+      </div>
+
+      <section class="space-y-3 text-sm sm:text-base">
+        <h2 class="font-serif text-xl text-slate-900 font-medium">1. General information and data controller</h2>
+        <p>
+          Under Article 13 of the Swiss Federal Constitution and the federal data protection provisions (Federal
+          Act on Data Protection, FADP), everyone is entitled to privacy and protection against the misuse of
+          their personal data. We take the protection of your personal data seriously and handle it
+          confidentially and in accordance with applicable data protection laws and this privacy policy.
+        </p>
+        <p>
+          The controller responsible for processing personal data on this website is:<br />
+          <strong>Thomas Kolonko</strong><br />
+          [Enter street and house number]<br />
+          8000 Zurich, Switzerland<br />
+          Email: <a href="mailto:info@thomaskolonko.ch" class="text-emerald-800 hover:underline">info@thomaskolonko.ch</a>
+        </p>
+      </section>
+
+      <section class="space-y-3 text-sm sm:text-base">
+        <h2 class="font-serif text-xl text-slate-900 font-medium">2. Hosting and server log files (GitHub Pages)</h2>
+        <p>
+          This website is hosted as a static website on <strong>GitHub Pages</strong>, a service provided by
+          GitHub Inc., 88 Colin P. Kelly Jr. St, San Francisco, CA 94107, USA (or GitHub B.V., Vijzelstraat
+          68-72, 1017 HL Amsterdam, Netherlands).
+        </p>
+        <p>
+          When you visit this website, GitHub automatically collects server log files to ensure technical
+          operation and IT security. These may include your IP address, the date and time of access, browser
+          type and operating system. Transfers of data to the USA rely on Standard Contractual Clauses (SCCs)
+          and the Swiss-U.S. Data Privacy Framework. For more information, see
+          <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer" class="text-emerald-800 hover:underline">GitHub’s privacy statement</a>.
+        </p>
+      </section>
+
+      <section class="space-y-3 text-sm sm:text-base">
+        <h2 class="font-serif text-xl text-slate-900 font-medium">3. No tracking cookies or externally hosted fonts</h2>
+        <p>
+          This website deliberately does not use analytics or advertising cookies (such as Google Analytics).
+          All fonts are hosted locally, so loading the website does not connect to third-party font servers
+          such as Google Fonts.
+        </p>
+      </section>
+
+      <section class="space-y-3 text-sm sm:text-base">
+        <h2 class="font-serif text-xl text-slate-900 font-medium">4. Contact by email (Hostpoint)</h2>
+        <p>
+          If you contact us by email, we store the information you provide, including your contact details, to
+          handle your enquiry and any follow-up questions. Our email infrastructure and domain management are
+          provided by the Swiss company <strong>Hostpoint AG</strong> (Neue Jonastrasse 60, 8640
+          Rapperswil-Jona, Switzerland), so your email communications are processed on servers in Switzerland.
+        </p>
+      </section>
+
+      <section class="space-y-3 text-sm sm:text-base">
+        <h2 class="font-serif text-xl text-slate-900 font-medium">5. Confidentiality in the coaching process</h2>
+        <p>
+          All information, topics and documents discussed during an initial conversation or coaching or
+          mentoring engagement are treated as strictly confidential and will never be shared with third parties
+          – including clients or employers – without your express consent.
+        </p>
+      </section>
+
+      <section class="space-y-3 text-sm sm:text-base">
+        <h2 class="font-serif text-xl text-slate-900 font-medium">6. Your rights under Swiss data protection law</h2>
+        <p>
+          Under applicable data protection law, you have the right at any time to obtain, free of charge,
+          information about your stored personal data, its source and recipients, and the purpose of processing.
+          You may also have the right to request correction, disclosure or deletion of this data. If you have
+          questions about data protection, please contact us using the email address provided in the legal notice.
+        </p>
+      </section>
+
+      <section class="space-y-3 text-sm sm:text-base">
+        <h2 class="font-serif text-xl text-slate-900 font-medium">7. Online appointment booking (Cal.com)</h2>
+        <p>
+          We use the online calendar service <strong>Cal.com</strong> (Cal.com, Inc., 548 Market St, PMB 80370,
+          San Francisco, CA 94104, USA) to arrange introductory calls and coaching sessions. If you book
+          through the embedded calendar widget, the information you enter – in particular your name, email
+          address and any notes about your situation – is processed solely to organise the appointment and add
+          it to our calendar. Transfers of data rely on Standard Contractual Clauses (SCCs) and the Swiss-U.S.
+          Data Privacy Framework. For more information, see
+          <a href="https://cal.com/privacy" target="_blank" rel="noopener noreferrer" class="text-emerald-800 hover:underline">Cal.com’s privacy policy</a>.
+        </p>
+      </section>
+
+      <p class="text-xs text-slate-400 pt-4 border-t border-stone-200">
+        English translation for convenience. In case of any discrepancy, the German version prevails.<br />
+        Version: October 2026 · Zurich
+      </p>
+    </div>
+  </main>
+
+  <footer class="bg-stone-100 border-t border-stone-200/80 py-10 px-6 text-sm text-slate-500">
+    <div class="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>© {new Date().getFullYear()} Thomas Kolonko · Zurich</div>
+      <div class="flex gap-6">
+        <a href="/en/legal-notice/" class="hover:text-slate-900 transition-colors">Legal notice</a>
+        <a href="/en/privacy/" class="text-slate-900 font-medium">Privacy</a>
+      </div>
+    </div>
+  </footer>
+</Layout>

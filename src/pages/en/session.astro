@@ -1,0 +1,43 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Cal from '../../components/Cal.astro';
+import LanguageSwitch from '../../components/LanguageSwitch.astro';
+---
+
+<Layout
+  noindex={true}
+  title="Book a Coaching Session (60 min) | Thomas Kolonko"
+  description="Booking for existing business coaching and mentoring clients."
+  language="en"
+  alternatePath="/session/"
+>
+  <header class="sticky top-0 z-50 bg-stone-50/90 backdrop-blur-md border-b border-stone-200/80">
+    <div class="max-w-5xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="/en/" class="font-serif text-xl font-medium tracking-tight text-slate-900">
+        Thomas Kolonko <span class="text-stone-400 font-sans text-sm font-normal ml-1 hidden sm:inline">| Business & Leadership Coaching</span>
+      </a>
+      <div class="flex items-center gap-6">
+        <LanguageSwitch language="en" deHref="/session/" enHref="/en/session/" />
+        <a href="/en/" class="text-sm font-medium text-emerald-800 hover:text-emerald-950 transition-colors">
+          Home
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="py-16 md:py-24 px-6">
+    <div class="max-w-5xl mx-auto">
+      <div class="max-w-2xl mb-10">
+        <p class="text-xs font-semibold uppercase tracking-widest text-emerald-800 mb-2">For existing clients</p>
+        <h1 class="font-serif text-3xl sm:text-4xl text-slate-900 tracking-tight mb-3">
+          Book your next coaching session (60 min)
+        </h1>
+        <p class="text-slate-600 leading-relaxed">
+          Choose a suitable time for our next 60-minute session, online or in person in Zurich.
+        </p>
+      </div>
+
+      <Cal calLink="https://cal.com/thomas-kolonko/60min" namespace="session60-en" />
+    </div>
+  </main>
+</Layout>

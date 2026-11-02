@@ -1,6 +1,7 @@
 // Edit the website wording here; the page layout and styling are in src/pages/index.astro.
 export const homepage = {
   pageTitle: 'Thomas Kolonko | Coaching & Betriebliches Mentoring in Zürich',
+  metaDescription: 'Business- und Personal-Coaching sowie betriebliches Mentoring in Zürich und online. Neue Perspektiven gewinnen, Stärken aktivieren und nächste Schritte gestalten.',
 
   brand: {
     name: 'Thomas Kolonko',
@@ -153,6 +154,7 @@ hero: {
         description: 'Weiterbildung im Bereich Erwachsenenbildung.',
       },
     ],
+    scaBadge: 'Vollmitglied der Swiss Coaching Association (SCA) – verpflichtet auf anerkannte ethische Richtlinien und laufende Qualitätssicherung.',
   },
 
   process: {

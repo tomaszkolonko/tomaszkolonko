@@ -12,26 +12,69 @@ interface Props {
   title: string;
   description?: string;
   noindex?: boolean;
+  language?: 'de' | 'en';
+  alternatePath?: string;
 }
 
 const {
   title,
   description = "Business & Personal Coaching sowie Betriebliches Mentoring in Zürich & Online. Neue Perspektiven gewinnen, Stärken aktivieren und deinen nächsten Schritt gestalten.",
   noindex = false,
+  language = 'de',
+  alternatePath = language === 'de' ? '/en/' : '/',
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const socialImageURL = new URL(socialImage.src, Astro.site);
+const alternateURL = new URL(alternatePath, Astro.site);
+const germanURL = language === 'de' ? canonicalURL : alternateURL;
+const englishURL = language === 'en' ? canonicalURL : alternateURL;
+const locale = language === 'de' ? 'de_CH' : 'en_US';
+const socialImageAlt = language === 'de'
+  ? 'Thomas Kolonko, Business Coach und betrieblicher Mentor in Zürich'
+  : 'Thomas Kolonko, business coach and operational mentor in Zurich';
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfessionalService',
+  name: language === 'de'
+    ? 'Thomas Kolonko – Business & Personal Coaching, Betriebliches Mentoring'
+    : 'Thomas Kolonko – Business & Personal Coaching, Operational Mentoring',
+  url: 'https://www.thomaskolonko.ch',
+  description: language === 'de'
+    ? 'Systemisches Business & Personal Coaching sowie Betriebliches Mentoring in Zürich und Online.'
+    : 'Systemic business and personal coaching, plus operational mentoring in Zurich and online.',
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: language === 'de' ? 'Zürich' : 'Zurich',
+    addressRegion: 'ZH',
+    addressCountry: 'CH',
+  },
+  areaServed: [
+    { '@type': 'City', name: language === 'de' ? 'Zürich' : 'Zurich' },
+    { '@type': 'Country', name: 'Switzerland' },
+  ],
+  founder: {
+    '@type': 'Person',
+    name: 'Thomas Kolonko',
+    jobTitle: language === 'de'
+      ? 'Betrieblicher Mentor mit eidg. Fachausweis & Coach'
+      : 'Operational mentor with a Swiss Federal Diploma of Higher Education & Coach',
+    knowsLanguage: ['de', 'en', 'zh'],
+  },
+};
 ---
 
 <!doctype html>
-<html lang="de-CH">
+<html lang={language === 'de' ? 'de-CH' : 'en'}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <link rel="icon" type="image/svg+xml" href={faviconSrc.src} />
     <link rel="canonical" href={canonicalURL} />
+    <link rel="alternate" hreflang="de-CH" href={germanURL} />
+    <link rel="alternate" hreflang="en" href={englishURL} />
+    <link rel="alternate" hreflang="x-default" href={germanURL} />
     
     <title>{title}</title>
     <meta name="description" content={description} />
@@ -39,7 +82,7 @@ const socialImageURL = new URL(socialImage.src, Astro.site);
     
     <!-- Open Graph / LinkedIn / WhatsApp Preview -->
     <meta property="og:type" content="website" />
-    <meta property="og:locale" content="de_CH" />
+    <meta property="og:locale" content={locale} />
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
@@ -47,41 +90,17 @@ const socialImageURL = new URL(socialImage.src, Astro.site);
     <meta property="og:image" content={socialImageURL} />
     <meta property="og:image:width" content={socialImage.width} />
     <meta property="og:image:height" content={socialImage.height} />
-    <meta property="og:image:alt" content="Thomas Kolonko, Business Coach und betrieblicher Mentor in Zürich" />
+    <meta property="og:image:alt" content={socialImageAlt} />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={socialImageURL} />
-    <meta name="twitter:image:alt" content="Thomas Kolonko, Business Coach und betrieblicher Mentor in Zürich" />
+    <meta name="twitter:image:alt" content={socialImageAlt} />
     
     <meta name="generator" content={Astro.generator} />
 
-    <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "Thomas Kolonko – Business & Personal Coaching, Betriebliches Mentoring",
-    "url": "https://www.thomaskolonko.ch",
-    "description": "Systemisches Business & Personal Coaching sowie Betriebliches Mentoring in Zürich und Online.",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Zürich",
-      "addressRegion": "ZH",
-      "addressCountry": "CH"
-    },
-    "areaServed": [
-      { "@type": "City", "name": "Zürich" },
-      { "@type": "Country", "name": "Switzerland" }
-    ],
-    "founder": {
-      "@type": "Person",
-      "name": "Thomas Kolonko",
-      "jobTitle": "Betrieblicher Mentor mit eidg. Fachausweis & Coach",
-      "knowsLanguage": ["de", "en", "zh"]
-    }
-  }
-</script>
+    <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
   </head>
   <body class="bg-stone-50 text-slate-900 font-sans antialiased selection:bg-emerald-800 selection:text-white">
     <slot />

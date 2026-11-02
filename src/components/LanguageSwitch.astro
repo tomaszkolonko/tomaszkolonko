@@ -1,0 +1,31 @@
+---
+interface Props {
+  language: 'de' | 'en';
+  deHref: string;
+  enHref: string;
+}
+
+const { language, deHref, enHref } = Astro.props;
+---
+
+<nav aria-label={language === 'de' ? 'Sprache wählen' : 'Choose language'} class="flex items-center gap-1 text-sm font-medium">
+  <a
+    href={deHref}
+    lang="de"
+    aria-current={language === 'de' ? 'page' : undefined}
+    class:list={[
+      'rounded px-2 py-1 transition-colors',
+      language === 'de' ? 'text-emerald-900 bg-emerald-900/10' : 'text-slate-600 hover:text-emerald-800',
+    ]}
+  >DE</a>
+  <span aria-hidden="true" class="text-stone-300">|</span>
+  <a
+    href={enHref}
+    lang="en"
+    aria-current={language === 'en' ? 'page' : undefined}
+    class:list={[
+      'rounded px-2 py-1 transition-colors',
+      language === 'en' ? 'text-emerald-900 bg-emerald-900/10' : 'text-slate-600 hover:text-emerald-800',
+    ]}
+  >EN</a>
+</nav>

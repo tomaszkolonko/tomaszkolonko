@@ -1,16 +1,18 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import LanguageSwitch from '../components/LanguageSwitch.astro';
 ---
 
-<Layout title="Datenschutzerklärung | Thomas Kolonko – Business Coaching">
+<Layout title="Datenschutzerklärung | Thomas Kolonko – Business Coaching" language="de" alternatePath="/en/privacy/">
   <!-- Minimal Header -->
   <header class="sticky top-0 z-50 bg-stone-50/90 backdrop-blur-md border-b border-stone-200/80">
     <div class="max-w-4xl mx-auto px-6 h-20 flex items-center justify-between">
       <a href="/" class="font-serif text-xl font-medium tracking-tight text-slate-900">
         Thomas Kolonko <span class="text-stone-400 font-sans text-sm font-normal ml-1 hidden sm:inline">| Business Coaching</span>
       </a>
+      <LanguageSwitch language="de" deHref="/datenschutz/" enHref="/en/privacy/" />
       <a href="/" class="text-sm font-medium text-emerald-800 hover:text-emerald-950 transition-colors">
-        ← Zurück zur Startseite
+        <span class="sm:hidden">← Startseite</span><span class="hidden sm:inline">← Zurück zur Startseite</span>
       </a>
     </div>
   </header>
