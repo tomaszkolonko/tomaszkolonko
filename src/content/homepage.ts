@@ -156,23 +156,23 @@ hero: {
 
   process: {
     eyebrow: 'Transparenter Prozess',
-    title: 'In drei Schritten zu Klarheit und stimmigen nächsten Schritten',
-    introduction: 'Coaching braucht einen sicheren Rahmen, Freiwilligkeit und Vertrauen. Wir klären gemeinsam, was du brauchst und wie die Zusammenarbeit für dich passt:',
+    title: 'Vom ersten Kennenlernen zur wirksamen Zusammenarbeit',
+    introduction: 'Das kostenlose Kennenlerngespräch ist unverbindlich und steht für sich. Wenn wir uns für eine Zusammenarbeit entscheiden, beginnt der Coachingprozess:',
     steps: [
       {
         number: '01',
         title: 'Unverbindliches Kennenlernen (25 Min.)',
-        description: `Wir lernen uns kostenlos per Videocall oder Telefon kennen. Du erzählst, was dich beschäftigt, und wir prüfen gemeinsam, ob Anliegen, Vertrauen und Zusammenarbeit für beide Seiten passen.`,
+        description: `In diesem einmaligen, kostenlosen Gespräch per Videocall oder Telefon erzählst du, was dich beschäftigt. Wir lernen uns kennen und prüfen, ob Vertrauen und Zusammenarbeit für beide Seiten passen – danach entscheidest du in Ruhe, ob du ins Coaching einsteigen möchtest.`,
       },
       {
         number: '02',
-        title: 'Klare Auftragsklärung & Zielbild',
-        description: `Wir klären dein Anliegen und was sich für dich verändern soll. Woran wirst du in deinem beruflichen oder privaten Alltag merken, dass unsere Gespräche hilfreich waren?`,
+        title: 'Einstieg ins Coaching',
+        description: `Zum Start schaffen wir einen gemeinsamen Rahmen für die Zusammenarbeit und schauen auf dein übergeordnetes Anliegen: Was möchtest du verändern oder erreichen? Daraus entwickeln wir eine Richtung, an der wir uns orientieren können.`,
       },
       {
         number: '03',
-        title: '5-Phasen-Prozess & Alltagstransfer',
-        description: `Wir arbeiten mit offenen, lösungsorientierten Fragen und Perspektivenwechseln an deinem Anliegen. Je nach Bedarf erkunden wir konkrete Alltagsschritte oder auch Gedanken und Muster, die dich prägen. So wird das Erarbeitete im Alltag nutzbar.`,
+        title: 'Jede Sitzung: Fokus und Alltagstransfer',
+        description: `Zu Beginn jeder Sitzung klären wir, was dich gerade beschäftigt und was dir heute einen greifbaren Mehrwert bringen würde. Zum Abschluss halten wir fest, welche Erkenntnis, Perspektive oder welcher nächste Schritt dich im Alltag weiterbringt.`,
       },
     ],
   },
