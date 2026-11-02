@@ -1,47 +1,29 @@
-# Astro Starter Kit: Minimal
+# Thomas Kolonko – Coaching & Mentoring
 
-```sh
-npm create astro@latest -- --template minimal
-```
+## Website
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Die Website stellt das Angebot von Thomas Kolonko vor: Business- und Personal-Coaching, betriebliches Mentoring und Sparring für Menschen in Fach-, Projekt- und Führungsrollen. Die Begleitung unterstützt bei beruflichen Herausforderungen, Veränderungen und persönlichen Anliegen – systemisch, lösungsorientiert und auf Augenhöhe. Das Angebot ist in Zürich und online verfügbar.
 
-## 🚀 Project Structure
+Website: [https://www.thomaskolonko.ch](https://www.thomaskolonko.ch)
 
-Inside of your Astro project, you'll see the following folders and files:
+## Astro
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+Die Website ist mit [Astro](https://astro.build) erstellt und wird als statische Website auf GitHub Pages veröffentlicht.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+### Website-Texte bearbeiten
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+Die Texte der Startseite sind in [`src/content/homepage.ts`](./src/content/homepage.ts) gesammelt. Die Darstellung und Struktur befinden sich in [`src/pages/index.astro`](./src/pages/index.astro). Die Inhalte der rechtlichen Seiten stehen in den jeweiligen Dateien unter `src/pages/`.
 
-Any static assets, like images, can be placed in the `public/` directory.
+### Befehle
 
-## Editing website text
+Alle Befehle im Projektverzeichnis ausführen:
 
-The homepage wording is collected in [`src/content/homepage.ts`](./src/content/homepage.ts), organized into sections such as `hero`, `challenges`, `services`, and `contact`. Edit the text there without needing to search through the page layout. The visual structure and styling are in [`src/pages/index.astro`](./src/pages/index.astro). Text on the legal pages is in their respective files under `src/pages/`.
+| Befehl | Aktion |
+| --- | --- |
+| `npm install` | Installiert die Abhängigkeiten |
+| `npm run dev` | Startet den lokalen Entwicklungsserver unter `localhost:4321` |
+| `npm run build` | Erstellt die Produktionsdateien im Verzeichnis `dist/` |
+| `npm run preview` | Zeigt den Build lokal zur Vorschau an |
+| `npm run astro ...` | Führt Astro-Befehle aus |
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Weitere Informationen findest du in der [Astro-Dokumentation](https://docs.astro.build).
