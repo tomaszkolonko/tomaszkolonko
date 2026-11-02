@@ -10,6 +10,7 @@ export const homepage = {
   navigation: [
     { label: 'Anliegen', href: '#anliegen' },
     { label: 'Angebot', href: '#angebot' },
+    { label: 'Coaching-Beispiele', href: '/Moegliche-Coaching-Beispiele/' },
     { label: 'Über mich', href: '#ueber-mich' },
     { label: 'Ablauf', href: '#ablauf' },
   ],
@@ -175,6 +176,7 @@ hero: {
         description: `Zu Beginn jeder Sitzung klären wir, was dich gerade beschäftigt und was dir heute einen greifbaren Mehrwert bringen würde. Zum Abschluss halten wir fest, welche Erkenntnis, Perspektive oder welcher nächste Schritt dich im Alltag weiterbringt.`,
       },
     ],
+    examplesAction: 'Coaching-Beispiele ansehen',
   },
 
   contact: {
