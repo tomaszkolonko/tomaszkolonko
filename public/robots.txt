@@ -1,6 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /session
-Disallow: /session/
 
 Sitemap: https://www.thomaskolonko.ch/sitemap-index.xml

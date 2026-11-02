@@ -185,7 +185,7 @@ hero: {
     description: `Wähle einen Termin für ein kostenloses 25-minütiges Kennenlerngespräch. Wir besprechen dein Anliegen und finden gemeinsam heraus, ob die Zusammenarbeit passt.`,
     calLink25: 'https://cal.com/thomas-kolonko/25min',
     calLink60: 'https://cal.com/thomas-kolonko/60min',
-    alternative: 'Kein passender Termin dabei? Schreib mir direkt an:',
+    alternative: 'Kein passender Termin dabei? Schreibe mir eine E-Mail:',
     email: 'info@thomaskolonko.ch',
     linkedInAction: 'Auf LinkedIn vernetzen',
   },
