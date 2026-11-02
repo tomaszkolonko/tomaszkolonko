@@ -5,17 +5,21 @@ import '@fontsource/lora/600.css';
 import '@fontsource/lora/400-italic.css';
 import '@fontsource-variable/inter';
 import '../styles/global.css';
-import favicon from '../assets/favicon_final.svg';
+import faviconSrc from '../assets/favicon.svg';
 
 interface Props {
   title: string;
   description?: string;
+  noindex?: boolean;
 }
 
 const {
   title,
-  description = "Systemisches Business Coaching & Sparring für Führungskräfte, Projektleiter und Teams im Wandel. Klarheit gewinnen, wirksam führen."
+  description = "Business & Personal Coaching sowie Betriebliches Mentoring in Zürich & Online. Neue Perspektiven gewinnen, Stärken aktivieren und deinen nächsten Schritt gestalten.",
+  noindex = false,
 } = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <!doctype html>
@@ -24,12 +28,48 @@ const {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <link rel="icon" type="image/svg+xml" href={favicon.src} />
+    <link rel="icon" type="image/svg+xml" href={faviconSrc.src} />
+    <link rel="canonical" href={canonicalURL} />
     
     <title>{title}</title>
-    
     <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
+    
+    <!-- Open Graph / LinkedIn / WhatsApp Preview -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="de_CH" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:site_name" content="Thomas Kolonko Coaching & Mentoring" />
+    
     <meta name="generator" content={Astro.generator} />
+
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Thomas Kolonko – Business & Personal Coaching, Betriebliches Mentoring",
+    "url": "https://www.thomaskolonko.ch",
+    "description": "Systemisches Business & Personal Coaching sowie Betriebliches Mentoring in Zürich und Online.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Zürich",
+      "addressRegion": "ZH",
+      "addressCountry": "CH"
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Zürich" },
+      { "@type": "Country", "name": "Switzerland" }
+    ],
+    "founder": {
+      "@type": "Person",
+      "name": "Thomas Kolonko",
+      "jobTitle": "Betrieblicher Mentor mit eidg. Fachausweis & Coach",
+      "knowsLanguage": ["de", "en", "zh"]
+    }
+  }
+</script>
   </head>
   <body class="bg-stone-50 text-slate-900 font-sans antialiased selection:bg-emerald-800 selection:text-white">
     <slot />
