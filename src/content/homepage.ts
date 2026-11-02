@@ -16,17 +16,18 @@ export const homepage = {
 
 hero: {
     eyebrow: 'Business & Personal Coaching · Betriebliches Mentoring · Zürich & Online',
-    title: 'Neue Perspektiven gewinnen und deinen nächsten Entwicklungsschritt gestalten.',
-    description: `Ob beruflich oder privat: Manchmal wünscht man sich frische Impulse und einen klaren Kompass,
-    um ein Anliegen mit Zuversicht anzugehen. Ich begleite dich systemisch und auf Augenhöhe dabei, deine Stärken
-    zu aktivieren, neue Lösungsräume zu öffnen und deine Ziele mit Freude und Selbstwirksamkeit zu erreichen.`,
+    title: 'Klarheit gewinnen, wirksam handeln und deinen eigenen Weg gestalten.',
+    description: `Ob im anspruchsvollen Berufsalltag, in einer Führungsrolle oder bei persönlichen Fragen:
+    Wenn Druck, Veränderungen oder wiederkehrende Hürden dich beschäftigen, sortieren wir gemeinsam deine Situation.
+    Als ruhiger, direkter Sparringspartner begleite ich dich auf Augenhöhe dabei, neue Perspektiven zu entwickeln,
+    deine Ressourcen zu nutzen und stimmige nächste Schritte zu finden.`,
     headerAction: 'Erstgespräch buchen',
     primaryAction: 'Kostenloses Kennenlernen vereinbaren',
     secondaryAction: 'Mögliche Themen entdecken',
     credentials: [
       'Betrieblicher Mentor mit eidg. Fachausweis',
       'Mitglied der Swiss Coaching Association (SCA)',
-      'ICF Level 2 zertifiziert (PCC-Track)',
+      'ICF PCC Level 2 Ausbildung abgeschlossen',
     ],
   },
 
@@ -37,73 +38,73 @@ hero: {
 
   challenges: {
     eyebrow: 'Typische Ausgangslagen',
-    title: 'Wann ein ehrliches Sparring auf Augenhöhe den Unterschied macht',
+    title: 'Wenn du nicht nur reagieren, sondern wieder gestalten möchtest',
     introduction: `Ob im Job, im Team oder im privaten Alltag: Oft wissen wir rational genau,
-    was wir tun „sollten“ – und stehen trotzdem am selben Punkt an.
-    Coaching öffnet den Raum, deine eigene Situation mit Abstand zu betrachten
-    und einen stimmigen Durchbruch zu schaffen.`,
+    was wir tun „sollten“ – und stehen trotzdem am selben Punkt an. In einem urteilsfreien Raum
+    betrachten wir, was dich beschäftigt, und erkunden, welche gangbaren Schritte für dich passen.`,
     cards: [
       {
         tag: 'Feststecken & Neuorientierung',
-        title: 'Wenn du anstehst und einen Durchbruch suchst',
+        title: 'Alltagshürden meistern und wieder handlungsfähig werden',
         description: `Du spürst, dass es so wie bisher nicht weitergeht – sei es im aktuellen Job,
-          bei einer wichtigen Lebensentscheidung oder in einem wiederkehrenden Muster.
-          Wir bringen Struktur in das Gedankenkarussell und machen deinen nächsten Schritt greifbar.`,
+          bei einer wichtigen Lebensentscheidung oder angesichts einer wiederkehrenden Alltagshürde.
+          Gemeinsam sortieren wir deine Gedanken, entwickeln Optionen und machen einen nächsten Schritt greifbar.`,
       },
       {
         tag: 'Selbstwirksamkeit & Resilienz',
-        title: 'Mit Druck, Stress und Erwartungen gesund umgehen',
-        description: `Im Berufsalltag wird oft viel Eigenverantwortung verlangt, ohne dass
-          die Rahmenbedingungen klar sind. Lerne, deine Emotionen und Gedanken bewusst zu regulieren,
-          gesunde Grenzen zu setzen und deine persönliche Resilienz nachhaltig zu stärken.`,
+        title: 'Resilienz und Selbstregulation stärken',
+        description: `Hohe Anforderungen und Stress können sich in Gedanken, Gefühlen und im Körper zeigen.
+          Wir erkunden, wie deine Bewertungen dein Erleben und Handeln beeinflussen, und stärken
+          deine innere Ruhe, Selbstregulation und gesunden Grenzen – passend zu deinem Anliegen.`,
       },
       {
-        tag: 'Beruflicher Wandel & Umbruch',
-        title: 'Sicherheit gewinnen in Veränderungsprozessen',
+        tag: 'Kommunikation & Zusammenarbeit',
+        title: 'Gespräche und Zusammenarbeit konstruktiv gestalten',
+        description: `Ein schwieriges Gespräch, Spannungen im Team oder Führen ohne formale Weisungsmacht:
+          Wir bereiten Gespräche vor, betrachten unterschiedliche Perspektiven und finden Wege,
+          Konflikte respektvoll und klar anzusprechen.`,
+      },
+      {
+        tag: 'Klarheit & Führung im Wandel',
+        title: 'Klarheit und Führung im Wandel finden',
         description: `Umstrukturierungen, neue Arbeitsweisen oder eine veränderte Rolle
-          lösen oft Unsicherheit und Widerstand aus. Ich begleite dich dabei, deinen eigenen 
-          Gestaltungsspielraum im neuen System zu erkennen und deinen Platz aktiv einzunehmen.`,
-      },
-      {
-        tag: 'Zusammenarbeit & Selbstführung',
-        title: 'Reibungen lösen und authentisch wirken',
-        description: `Schwierige Gespräche mit Vorgesetzten oder Kolleg:innen, unterschwellige
-          Konflikte im Team oder eine Rolle ohne formale Weisungsmacht: Entdecke neue Kommunikationswege
-          und führe dich selbst (und andere) klar und kooperativ.`,
+          können Unsicherheit auslösen. Wir klären, was deine Rolle ausmacht, wo dein Einfluss liegt
+          und wie du Veränderungen auf deine Weise mitgestalten kannst.`,
       },
     ],
   },
 
   services: {
     eyebrow: 'Zusammenarbeit & Angebot',
-    title: 'Individuelle Begleitung für deinen beruflichen und persönlichen Weg',
-    introduction: `Coaching ist für mich Hilfe zur Selbsthilfe auf Basis von Freiwilligkeit,
-      Vertrauen und absoluter Diskretion. Du bist der Experte für dein Leben – ich unterstütze dich
-      je nach Bedarf klar deklariert coachend (durch gezielte Fragen), trainierend
-      (beim Einüben neuer Verhaltensweisen) oder beratend (mit neutralen Impulsen).`,
+    title: 'Business-, Resilienz- und Life-Coaching – nahbar und praxisorientiert',
+    introduction: `Berufliche und private Themen lassen sich im Alltag oft nicht trennen.
+      Ich biete dir einen freiwilligen, vertraulichen Reflexionsraum und begegne dir partnerschaftlich
+      und direkt. Wir starten bei deinem konkreten Anliegen und arbeiten lösungsorientiert.
+      Wenn es für dich passt, richten wir den Blick auch auf tieferliegende Gedanken und Muster.
+      Beratung oder konkrete Methoden biete ich als Impuls an, wenn du das ausdrücklich möchtest.`,
     cards: [
       {
-        audience: 'Für Mitarbeitende, Fachkräfte & Privatpersonen',
-        title: '1:1 Coaching & Standortbestimmung',
-        description: `Ein geschützter Reflexionsraum für Themen aus Beruf und Privatleben, bei denen du dir Fortschritt,
-        Klarheit oder Entlastung wünschst. Statt endlos in der Vergangenheit zu wühlen, richten wir den Blick
-        auf deine Ressourcen und konkrete Lösungen.`,
+        audience: 'Für Fachkräfte, Mitarbeitende & Privatpersonen',
+        title: '1:1 Coaching für Beruf und Alltag',
+        description: `Ein geschützter Reflexionsraum für anspruchsvolle Situationen, persönliche Entscheidungen
+        oder wiederkehrende Alltagshürden. Wir nehmen deine Stärken und Ressourcen ernst und richten den Blick
+        auf konkrete, gangbare Schritte in eine stimmige Zukunft.`,
         points: [
-          'Einzelsessions (60–90 Min.) oder Begleitung über mehrere Wochen/Monate',
-          'Auflösen von Denkblockaden, Stärkung des Selbstvertrauens und klare Entscheidungsfindung',
-          'Online oder persönlich in ruhiger Atmosphäre in Zürich',
+          'Einzelsitzungen à 60 Minuten oder Begleitung über mehrere Termine',
+          'Klarheit gewinnen, eigene Handlungsoptionen entwickeln und Selbstwirksamkeit stärken',
+          'Online oder auf Wunsch persönlich in Zürich, zum Beispiel als Walk & Talk',
         ],
         action: 'Unverbindliches Vorgespräch anfragen',
       },
       {
-        audience: 'Im Unternehmenskontext & bei Veränderungen',
-        title: 'Betriebliches Mentoring & Rollen-Sparring',
+        audience: 'Für Menschen in Fach-, Projekt- und Führungsrollen',
+        title: 'Betriebliches Mentoring & Sparring im Wandel',
         description: `Gezielte Unterstützung für Menschen, die im beruflichen Alltag vor neuen Anforderungen
-        stehen – vom Einstieg in eine neue Rolle über agile Zusammenarbeit bis zum souveränen Umgang mit
-        anspruchsvollen Team- und Führungssituationen.`,
+        stehen – von hohen Anforderungen und Veränderungen bis zu lateraler Führung und anspruchsvollen
+        Situationen in der Zusammenarbeit.`,
         points: [
-          'Aufbau von Veränderungskompetenz, Stressmanagement und gesunder Selbstführung',
-          'Praxisnahes Sparring für Fachkräfte, Projektmitarbeitende, Scrum Master & Team-Leads',
+          'Klarheit in der eigenen Rolle, Selbstführung und Umgang mit Belastung stärken',
+          'Praxisnahes Sparring für Fachkräfte, Projektleitende, Scrum Master, Product Owner & Teamleads',
           'Auf Wunsch auch im Rahmen einer betrieblichen Förderung (Dreiecksvertrag möglich)',
         ],
         action: 'Anliegen unverbindlich besprechen',
@@ -113,60 +114,73 @@ hero: {
 
   about: {
     eyebrow: 'Über mich, Menschenbild & Haltung',
-    title: 'Ich hole dich dort ab, wo du gerade stehst – nicht dort, wo andere dich gerne hätten.',
-    introduction: `Mein eigener Weg war alles andere als geradlinig: Nach einem Sinologie-Studium mit zwei prägenden Jahren in China wechselte ich – mehr aus Vernunft und dem Glauben, nur „harte Skills“ wie Mathematik und Technik würden zählen – in die Informatik (M.Sc.). Doch als Software-Entwickler erlebte ich hautnah den Frust, wenn von Mitarbeitenden Eigenverantwortung gefordert wird, ohne sie wirklich zu begleiten. Gleichzeitig bekam ich immer wieder dasselbe Feedback: Meine eigentliche Superkraft liegt im Menschlichen und im Vermitteln zwischen verhärteten Fronten.`,
-    approach: `Als ich 2023 den Schritt zum Scrum Master und Agile Coach machte, fand ich meinen Platz. Mein Menschenbild fusst auf drei Säulen: dem Konstruktivismus (jeder Mensch hat seine eigene „Landkarte“ der Realität und trägt die Lösung bereits in sich), dem Humanismus nach Carl Rogers (bedingungslose Wertschätzung, Empathie und Echtheit) sowie der Positiven Psychologie (Fokus auf deine Stärken und das, was dich aufblühen lässt).`,
+    title: 'Struktur, menschliche Weitsicht und Führung auf Augenhöhe',
+    introduction: `Mein Hintergrund verbindet analytisches Denken mit Offenheit für unterschiedliche Perspektiven:
+      Nach meinem Sinologie-Studium und zwei Jahren in China habe ich einen Master in Computer Science erworben.
+      Als Senior Scrum Master und Agile Coach begleite ich Menschen und Teams in Veränderungsprozessen –
+      auch ohne formale Weisungsbefugnis. Aus eigener Erfahrung kenne ich die Arbeitsrealität technischer
+      und leistungsorientierter Organisationen und die Spannungen, die entstehen, wenn Fronten sich verhärten.`,
+    approach: `In meiner Arbeit begegne ich dir ruhig, geerdet und wertschätzend – und spreche Beobachtungen
+      ehrlich an. Ich führe den Prozess, nicht den Inhalt: Mit offenen Fragen erkunden wir deine Situation
+      und die Wechselwirkungen in deinem Umfeld. Dabei betrachten wir auch, wie Gedanken Gefühle und Handlungen
+      beeinflussen. Wenn du dafür offen bist, beziehen wir Körperwahrnehmung und einfache Wege zur Selbstregulation
+      ein. Wie im Partner-Tanz und in den Kampfkünsten entstehen Verbindung und Führung für mich nicht durch Druck,
+      sondern durch Präsenz, eigenes Gespür und innere Klarheit.`,
     credentialLeadIn: 'Als ',
-    credential: 'Betrieblicher Mentor mit eidgenössischem Fachausweis, Vollmitglied der SCA',
-    credentialFollowUp: ` und ausgebildeter Integral, Business & Leadership Coach (Living Sense, ICF PCC Level 2 bestanden) begleite ich dich mit echter Empathie, Struktur und dem tiefen Vertrauen in deine eigene Entwicklungsfähigkeit.`,
+    credential: 'Betrieblicher Mentor mit eidgenössischem Fachausweis und aktives Mitglied der SCA',
+    credentialFollowUp: ` sowie diplomierter Business & Leadership Coach und Integral Coach (Living Sense) begleite ich dich mit Struktur, Empathie und Vertrauen in deine Entwicklungsfähigkeit. Meine ICF PCC Level 2 Ausbildung habe ich abgeschlossen.`,
     qualificationsTitle: 'Ausbildungen, Mitgliedschaften & Hintergrund',
     qualifications: [
       {
-        title: 'Betrieblicher Mentor mit eidg. Fachausweis & SCA-Mitglied',
-        description: 'Eidgenössisches Diplom (Living Sense Coaching Institut) sowie Vollmitglied der Swiss Coaching Association (SCA) mit Arbeit nach anerkannten ethischen Qualitätsstandards.',
+        title: 'Betrieblicher Mentor mit eidg. Fachausweis & aktives SCA-Mitglied',
+        description: 'Qualifikation als betrieblicher Mentor und aktives Mitglied der Swiss Coaching Association (SCA); ich orientiere mich an den ethischen Richtlinien von SCA und ICF.',
       },
       {
-        title: 'ICF PCC Level 2 (bestanden) · Integral, Business & Leadership Coach',
-        description: 'Fundierte Ausbildungen in Integral Coaching sowie Business & Leadership Coaching (Living Sense) und erfolgreich bestandene ICF PCC Level 2 Prüfung (in Akkreditierung).',
+        title: 'ICF PCC Level 2 Ausbildung · Integral, Business & Leadership Coach',
+        description: 'Diplomierter Business & Leadership Coach und Integral Coach (Living Sense); die ICF PCC Level 2 Ausbildung im Professional Certified Coach Track ist abgeschlossen.',
       },
       {
-        title: 'Erfahrung als Agile Coach, Scrum Master & Software Engineer',
-        description: 'Tiefes Verständnis für den Arbeitsalltag in modernen Organisationen, Teamdynamiken und das Begleiten auf Augenhöhe ohne formale Machtkeule.',
+        title: 'Erfahrung als Senior Scrum Master & Agile Coach',
+        description: 'Praxiserfahrung in der Begleitung von Teams und Individuen durch Veränderungen, im Umgang mit Teamdynamiken und in Führung ohne formale Weisungsbefugnis.',
       },
       {
-        title: 'M.Sc. in Computer Science & Hintergrund in Sinologie',
-        description: 'Verbindung von analytischer Struktur mit einer grossen Offenheit für unterschiedliche Lebensentwürfe, Kulturen und persönliche Perspektiven.',
+        title: 'M.Sc. in Computer Science & Studium der Sinologie',
+        description: 'Analytische Struktur verbunden mit interkultureller Erfahrung und Offenheit für unterschiedliche Perspektiven.',
+      },
+      {
+        title: 'In Ausbildung zum SVEB-Zertifikat',
+        description: 'Weiterbildung im Bereich Erwachsenenbildung.',
       },
     ],
   },
 
   process: {
     eyebrow: 'Transparenter Prozess',
-    title: 'In drei klaren Schritten zu deinem nächsten Durchbruch',
-    introduction: 'Ein wirksames Coaching braucht einen sicheren Rahmen, Freiwilligkeit und deine Bereitschaft, ehrlich hinzuschauen. So arbeiten wir zusammen:',
+    title: 'In drei Schritten zu Klarheit und stimmigen nächsten Schritten',
+    introduction: 'Coaching braucht einen sicheren Rahmen, Freiwilligkeit und Vertrauen. Wir klären gemeinsam, was du brauchst und wie die Zusammenarbeit für dich passt:',
     steps: [
       {
         number: '01',
         title: 'Unverbindliches Kennenlernen (25 Min.)',
-        description: `Wir lernen uns kostenlos per Videocall oder Telefon kennen. Du schilderst mir kurz, wo du gerade anstehst, und wir spüren gemeinsam, ob die Chemie und das Vertrauen für eine Zusammenarbeit stimmen.`,
+        description: `Wir lernen uns kostenlos per Videocall oder Telefon kennen. Du erzählst, was dich beschäftigt, und wir prüfen gemeinsam, ob Anliegen, Vertrauen und Zusammenarbeit für beide Seiten passen.`,
       },
       {
         number: '02',
         title: 'Klare Auftragsklärung & Zielbild',
-        description: `Wir definieren dein konkretes Zielbild: Woran wirst du in deinem beruflichen oder privaten Alltag ganz konkret merken, dass sich das Coaching für dich gelohnt hat?`,
+        description: `Wir klären dein Anliegen und was sich für dich verändern soll. Woran wirst du in deinem beruflichen oder privaten Alltag merken, dass unsere Gespräche hilfreich waren?`,
       },
       {
         number: '03',
         title: '5-Phasen-Prozess & Alltagstransfer',
-        description: `Jede Sitzung folgt einem klaren Rahmen (Orientierung, Klärung, Veränderung, Integration und Abschluss). Mit lösungsorientierten Fragen, Perspektivenwechseln und kleinen Experimenten sorgen wir für echte Aha-Momente und nachhaltige Schritte im Alltag.`,
+        description: `Wir arbeiten mit offenen, lösungsorientierten Fragen und Perspektivenwechseln an deinem Anliegen. Je nach Bedarf erkunden wir konkrete Alltagsschritte oder auch Gedanken und Muster, die dich prägen. So wird das Erarbeitete im Alltag nutzbar.`,
       },
     ],
   },
 
   contact: {
     eyebrow: 'Nächster Schritt',
-    title: 'Lass uns unverbindlich ins Gespräch kommen',
-    description: `Wähle direkt einen passenden Termin für unser kostenloses 25-minütiges Kennenlerngespräch oder schreib mir eine kurze Nachricht zu deinem Anliegen.`,
+    title: 'Lass uns unverbindlich kennenlernen',
+    description: `Wähle einen Termin für ein kostenloses 25-minütiges Kennenlerngespräch. Wir besprechen dein Anliegen und finden gemeinsam heraus, ob die Zusammenarbeit passt.`,
     calLink25: 'https://cal.com/thomas-kolonko/25min',
     calLink60: 'https://cal.com/thomas-kolonko/60min',
     alternative: 'Kein passender Termin dabei? Schreib mir direkt an:',
@@ -175,7 +189,7 @@ hero: {
   },
 
   footer: {
-    summary: 'Coaching & Betriebliches Mentoring · Zürich',
+    summary: 'Business-, Resilienz- & Life-Coaching · Betriebliches Mentoring · Zürich',
     impressum: 'Impressum',
     privacy: 'Datenschutz',
     linkedIn: 'LinkedIn',
