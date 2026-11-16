@@ -1,6 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import LanguageSwitch from '../../components/LanguageSwitch.astro';
+import SiteHeader from '../../components/SiteHeader.astro';
 ---
 
 <Layout
@@ -9,22 +9,7 @@ import LanguageSwitch from '../../components/LanguageSwitch.astro';
   language="en"
   alternatePath="/Moegliche-Coaching-Beispiele/"
 >
-  <header class="sticky top-0 z-50 bg-stone-50/90 backdrop-blur-md border-b border-stone-200/80">
-    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
-      <a href="/en/" class="font-serif text-xl font-medium tracking-tight text-slate-900">
-        Thomas Kolonko <span class="text-stone-400 font-sans text-sm font-normal ml-1 hidden sm:inline">| Coaching & Mentoring</span>
-      </a>
-      <div class="flex items-center gap-6">
-        <LanguageSwitch language="en" deHref="/Moegliche-Coaching-Beispiele/" enHref="/en/coaching-examples/" />
-        <a href="/en/" class="hidden sm:inline text-sm font-medium text-slate-600 hover:text-emerald-800 transition-colors">
-          Home
-        </a>
-        <a href="/en/#kontakt" class="inline-flex items-center justify-center px-3 sm:px-5 py-2.5 text-xs sm:text-sm font-medium text-white bg-emerald-800 hover:bg-emerald-900 rounded-lg transition-colors shadow-xs">
-          <span class="sm:hidden">Call</span><span class="hidden sm:inline">Introductory call</span>
-        </a>
-      </div>
-    </div>
-  </header>
+  <SiteHeader language="en" page="examples" />
 
   <main>
     <section class="py-20 md:py-28 px-6">
