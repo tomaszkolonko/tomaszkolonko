@@ -5,15 +5,20 @@ import { homepageEn } from '../content/homepage.en';
 
 interface Props {
   language: 'de' | 'en';
-  page: 'home' | 'examples';
+  page: 'home' | 'examples' | 'about';
 }
 
 const { language, page } = Astro.props;
 const isEnglish = language === 'en';
 const content = isEnglish ? homepageEn : homepage;
 const homePath = isEnglish ? '/en/' : '/';
-const deHref = page === 'home' ? '/' : '/Moegliche-Coaching-Beispiele/';
-const enHref = page === 'home' ? '/en/' : '/en/coaching-examples/';
+const pagePaths = {
+  home: { de: '/', en: '/en/' },
+  examples: { de: '/Moegliche-Coaching-Beispiele/', en: '/en/coaching-examples/' },
+  about: { de: '/ueber-mich/', en: '/en/about/' },
+};
+const deHref = pagePaths[page].de;
+const enHref = pagePaths[page].en;
 const homeAnchor = (href: string) => page === 'home' ? href : `${homePath}${href}`;
 ---
 

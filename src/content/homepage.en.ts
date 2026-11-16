@@ -11,7 +11,7 @@ export const homepageEn = {
     { label: 'Challenges', href: '#anliegen' },
     { label: 'Services', href: '#angebot' },
     { label: 'Coaching examples', href: '/en/coaching-examples/' },
-    { label: 'About me', href: '#ueber-mich' },
+    { label: 'About me', href: '/en/about/' },
     { label: 'Process', href: '#ablauf' },
   ],
 
@@ -108,6 +108,7 @@ export const homepageEn = {
   about: {
     eyebrow: 'About me, my view of people & my approach',
     title: 'Structure, human insight and leadership as equals',
+    action: 'More about me',
     introduction: `My background combines analytical thinking with openness to different perspectives. After
       studying Sinology and spending two years in China, I earned a master’s degree in Computer Science. As a
       Senior Scrum Master and Agile Coach, I support people and teams through change – including situations

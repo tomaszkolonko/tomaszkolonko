@@ -12,7 +12,7 @@ export const homepage = {
     { label: 'Anliegen', href: '#anliegen' },
     { label: 'Angebot', href: '#angebot' },
     { label: 'Coaching-Beispiele', href: '/Moegliche-Coaching-Beispiele/' },
-    { label: 'Über mich', href: '#ueber-mich' },
+    { label: 'Über mich', href: '/ueber-mich/' },
     { label: 'Ablauf', href: '#ablauf' },
   ],
 
@@ -117,6 +117,7 @@ hero: {
   about: {
     eyebrow: 'Über mich, Menschenbild & Haltung',
     title: 'Struktur, menschliche Weitsicht und Führung auf Augenhöhe',
+    action: 'Mehr über mich erfahren',
     introduction: `Mein Hintergrund verbindet analytisches Denken mit Offenheit für unterschiedliche Perspektiven:
       Nach meinem Sinologie-Studium und zwei Jahren in China habe ich einen Master in Computer Science erworben.
       Als Senior Scrum Master und Agile Coach begleite ich Menschen und Teams in Veränderungsprozessen –

@@ -12,7 +12,7 @@ Die Website ist mit [Astro](https://astro.build) erstellt und wird als statische
 
 ### Website-Texte bearbeiten
 
-Die deutschen Texte der Startseite sind in [`src/content/homepage.ts`](./src/content/homepage.ts) und die englischen Übersetzungen in [`src/content/homepage.en.ts`](./src/content/homepage.en.ts) gesammelt. Die gemeinsame Darstellung befindet sich in [`src/components/HomePage.astro`](./src/components/HomePage.astro). Englische Unterseiten liegen in `src/pages/en/`; die deutschen Unterseiten liegen direkt in `src/pages/`.
+Die deutschen Texte der Startseite und der Über-mich-Seite sind in [`src/content/homepage.ts`](./src/content/homepage.ts) und die englischen Übersetzungen in [`src/content/homepage.en.ts`](./src/content/homepage.en.ts) gesammelt. Die gemeinsamen Darstellungen befinden sich in [`src/components/HomePage.astro`](./src/components/HomePage.astro) und [`src/components/AboutPage.astro`](./src/components/AboutPage.astro). Englische Unterseiten liegen in `src/pages/en/`; die deutschen Unterseiten liegen direkt in `src/pages/`.
 
 ### Befehle
 

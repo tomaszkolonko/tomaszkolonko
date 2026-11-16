@@ -1,0 +1,92 @@
+---
+import { Image } from 'astro:assets';
+import scaLogo from '../assets/SCA_Mitglied.svg';
+import { homepage } from '../content/homepage';
+import { homepageEn } from '../content/homepage.en';
+import Layout from '../layouts/Layout.astro';
+import SiteHeader from './SiteHeader.astro';
+
+interface Props {
+  language: 'de' | 'en';
+}
+
+const { language } = Astro.props;
+const isEnglish = language === 'en';
+const content = isEnglish ? homepageEn : homepage;
+const homePath = isEnglish ? '/en/' : '/';
+const legalPath = isEnglish ? '/en/legal-notice/' : '/impressum/';
+const privacyPath = isEnglish ? '/en/privacy/' : '/datenschutz/';
+---
+
+<Layout
+  title={isEnglish ? 'About me | Thomas Kolonko' : 'Über mich | Thomas Kolonko'}
+  description={isEnglish
+    ? 'Learn about Thomas Kolonko’s experience, qualifications and approach to coaching and operational mentoring.'
+    : 'Erfahre mehr über Thomas Kolonkos Erfahrung, Qualifikationen und Haltung im Coaching und betrieblichen Mentoring.'}
+  language={language}
+  alternatePath={isEnglish ? '/ueber-mich/' : '/en/about/'}
+>
+  <SiteHeader language={language} page="about" />
+
+  <main>
+    <section class="py-20 md:py-28 px-6">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-12 gap-12 items-center">
+        <div class="md:col-span-7 space-y-6">
+          <p class="text-xs font-semibold uppercase tracking-widest text-emerald-800">{content.about.eyebrow}</p>
+          <h1 class="font-serif text-4xl sm:text-5xl text-slate-900 tracking-tight leading-snug">
+            {content.about.title}
+          </h1>
+          <p class="text-slate-600 leading-relaxed">
+            {content.about.introduction}
+          </p>
+          <p class="text-slate-600 leading-relaxed">
+            {content.about.credentialLeadIn}<strong class="text-slate-900 font-medium">{content.about.credential}</strong>{content.about.credentialFollowUp}
+          </p>
+          <p class="text-slate-600 leading-relaxed">
+            {content.about.approach}
+          </p>
+          <a href={`${homePath}#kontakt`} class="inline-flex items-center justify-center px-6 py-3 text-sm font-medium text-white bg-emerald-800 hover:bg-emerald-900 rounded-lg transition-colors">
+            {content.hero.headerAction}
+          </a>
+        </div>
+
+        <div class="md:col-span-5 bg-white border border-stone-200 p-8 rounded-2xl space-y-6">
+          <h2 class="font-serif text-xl text-slate-900 border-b border-stone-200 pb-3">{content.about.qualificationsTitle}</h2>
+          <ul class="space-y-4 text-sm text-slate-600">
+            {content.about.qualifications.map((item) => (
+              <li class="flex flex-col">
+                <span class="text-slate-900 font-medium">{item.title}</span>
+                <span class="text-slate-600 text-xs">{item.description}</span>
+              </li>
+            ))}
+          </ul>
+          <div class="pt-6 border-t border-stone-200 flex flex-col items-start sm:flex-row sm:items-center gap-4">
+            <div class="bg-white p-2.5 rounded-xl shrink-0 shadow-xs">
+              <Image
+                src={scaLogo}
+                alt={isEnglish ? 'Member of the Swiss Coaching Association (SCA)' : 'Mitglied der Swiss Coaching Association (SCA)'}
+                class="h-10 w-auto object-contain"
+              />
+            </div>
+            <p class="min-w-0 text-xs text-slate-600 leading-snug">
+              {content.about.scaBadge}
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-stone-100 border-t border-stone-200/80 py-12 px-6 text-sm text-slate-500">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        <a href={homePath} class="font-serif text-slate-800 font-medium hover:text-emerald-800">{content.brand.name}</a> · {content.footer.summary}
+      </div>
+      <div class="flex gap-6">
+        <a href={legalPath} class="hover:text-slate-900 transition-colors">{content.footer.impressum}</a>
+        <a href={privacyPath} class="hover:text-slate-900 transition-colors">{content.footer.privacy}</a>
+        <a href="https://www.linkedin.com/in/thomaskolonko/" target="_blank" rel="noopener noreferrer" class="hover:text-slate-900 transition-colors">{content.footer.linkedIn}</a>
+      </div>
+    </div>
+  </footer>
+</Layout>
